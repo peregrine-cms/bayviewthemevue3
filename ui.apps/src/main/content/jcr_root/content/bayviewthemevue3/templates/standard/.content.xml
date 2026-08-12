@@ -28,7 +28,7 @@
                 <i1 jcr:primaryType="nt:unstructured" text="Wochenplan" link="/content/bayviewthemevue3/pages/index"/>
             </navitems>
         </header>
-        <main jcr:primaryType="nt:unstructured" sling:resourceType="pagerendervue/structure/container"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="pagerendervue3/structure/container"/>
         <footer
             jcr:primaryType="nt:unstructured"
             sling:resourceType="bayviewthemevue3/components/footer"

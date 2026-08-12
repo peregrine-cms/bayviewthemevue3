@@ -12,7 +12,7 @@
         sling:resourceType="bayviewthemevue3/components/page"
         template="/content/bayviewthemevue3/templates/standard"
         templatePath="/content/bayviewthemevue3/templates/standard">
-        <main jcr:primaryType="nt:unstructured" sling:resourceType="pagerendervue/structure/container">
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="pagerendervue3/structure/container">
             <hero
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bayviewthemevue3/components/herosplit"
