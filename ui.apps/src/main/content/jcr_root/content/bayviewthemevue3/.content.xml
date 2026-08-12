@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="per:Site"
-    jcr:title="Bayview Theme"
+    jcr:title="Bayview Martial Arts (Vue 3)"
     jcr:description="Sports club theme (Bern Capitals lift-and-shift) for Peregrine CMS using Vue 3"
     sourceSite="pagerendervue"
     internal="false"
