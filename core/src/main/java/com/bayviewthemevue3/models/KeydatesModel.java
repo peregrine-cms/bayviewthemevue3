@@ -134,16 +134,16 @@ import javax.inject.Named;
         "source": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Datenquelle",
+          "x-form-label": "Data source",
           "x-form-type": "materialselect",
           "x-default": "manual",
           "properties": {
             "manual": {
-              "x-form-name": "Manuelle Einträge",
+              "x-form-name": "Manual entries",
               "x-form-value": "manual"
             },
             "ical": {
-              "x-form-name": "Google Kalender (ganztägige Events)",
+              "x-form-name": "Google Calendar (all-day events)",
               "x-form-value": "ical"
             }
           }
@@ -160,7 +160,7 @@ import javax.inject.Named;
         "maxitems": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Maximale Einträge (0 = alle)",
+          "x-form-label": "Maximum entries (0 = all)",
           "x-form-type": "text"
         },
         "videourl": {
@@ -253,7 +253,7 @@ public class KeydatesModel extends AbstractComponent {
 	@Default(values ="100")
 	private String zoom;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Datenquelle","x-form-type":"materialselect","x-default":"manual","properties":{"manual":{"x-form-name":"Manuelle Einträge","x-form-value":"manual"},"ical":{"x-form-name":"Google Kalender (ganztägige Events)","x-form-value":"ical"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Data source","x-form-type":"materialselect","x-default":"manual","properties":{"manual":{"x-form-name":"Manual entries","x-form-value":"manual"},"ical":{"x-form-name":"Google Calendar (all-day events)","x-form-value":"ical"}}} */
 	@Inject
 	@Default(values ="manual")
 	private String source;
@@ -263,7 +263,7 @@ public class KeydatesModel extends AbstractComponent {
 	@Default(values ="120")
 	private String daysahead;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Maximale Einträge (0 = alle)","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Maximum entries (0 = all)","x-form-type":"text"} */
 	@Inject
 	private String maxitems;
 
@@ -334,7 +334,7 @@ public class KeydatesModel extends AbstractComponent {
 		return zoom;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Datenquelle","x-form-type":"materialselect","x-default":"manual","properties":{"manual":{"x-form-name":"Manuelle Einträge","x-form-value":"manual"},"ical":{"x-form-name":"Google Kalender (ganztägige Events)","x-form-value":"ical"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Data source","x-form-type":"materialselect","x-default":"manual","properties":{"manual":{"x-form-name":"Manual entries","x-form-value":"manual"},"ical":{"x-form-name":"Google Calendar (all-day events)","x-form-value":"ical"}}} */
 	public String getSource() {
 		return source;
 	}
@@ -344,7 +344,7 @@ public class KeydatesModel extends AbstractComponent {
 		return daysahead;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Maximale Einträge (0 = alle)","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Maximum entries (0 = all)","x-form-type":"text"} */
 	public String getMaxitems() {
 		return maxitems;
 	}

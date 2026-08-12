@@ -2,16 +2,16 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Header (Lockup)">
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
     <sample jcr:primaryType="nt:unstructured" title="Header (Lockup)" group="Structure">
-      <jcr:content jcr:primaryType="nt:unstructured" brand="TAEKWONDO BERN" brandlink="/content/bayviewthemevue3/pages/index" logo="/content/bayviewthemevue3/assets/logo-mark.png" logoalt="Taekwondo Bern – White Tiger" variant="default"/>
+      <jcr:content jcr:primaryType="nt:unstructured" brand="BAYVIEW MARTIAL ARTS" brandlink="/content/bayviewthemevue3/pages/index" logo="/content/bayviewthemevue3/assets/logo-mark.png" logoalt="Bayview Martial Arts crest" variant="default"/>
     </sample>
     <sample-badge jcr:primaryType="nt:unstructured" title="Header (Badge)" group="Structure">
-      <jcr:content jcr:primaryType="nt:unstructured" brand="" brandlink="/content/bayviewthemevue3/pages/index" logo="/content/bayviewthemevue3/assets/logo.png" logoalt="Taekwondo Bern Crest" variant="badge" shrink="true"/>
+      <jcr:content jcr:primaryType="nt:unstructured" brand="" brandlink="/content/bayviewthemevue3/pages/index" logo="/content/bayviewthemevue3/assets/logo.png" logoalt="Bayview Martial Arts crest" variant="badge" shrink="true"/>
     </sample-badge>
     <sample-centered jcr:primaryType="nt:unstructured" title="Header (Centered)" group="Structure">
-      <jcr:content jcr:primaryType="nt:unstructured" brand="" brandlink="/content/bayviewthemevue3/pages/index" logo="/content/bayviewthemevue3/assets/logo.png" logoalt="Taekwondo Bern Crest" variant="centered"/>
+      <jcr:content jcr:primaryType="nt:unstructured" brand="" brandlink="/content/bayviewthemevue3/pages/index" logo="/content/bayviewthemevue3/assets/logo.png" logoalt="Bayview Martial Arts crest" variant="centered"/>
     </sample-centered>
     <sample-sticky jcr:primaryType="nt:unstructured" title="Header (Sticky)" group="Structure">
-      <jcr:content jcr:primaryType="nt:unstructured" brand="TAEKWONDO BERN" brandlink="/content/bayviewthemevue3/pages/index" logo="/content/bayviewthemevue3/assets/logo-mark.png" logoalt="Taekwondo Bern – White Tiger" variant="sticky"/>
+      <jcr:content jcr:primaryType="nt:unstructured" brand="BAYVIEW MARTIAL ARTS" brandlink="/content/bayviewthemevue3/pages/index" logo="/content/bayviewthemevue3/assets/logo-mark.png" logoalt="Bayview Martial Arts crest" variant="sticky"/>
     </sample-sticky>
   </jcr:content>
 </jcr:root>

@@ -1,5 +1,5 @@
 {
   "title": "Heading",
   "group": "Blocks",
-  "model": { "text": "Willkommen im Club", "size": "band", "level": "h2" }
+  "model": { "text": "Welcome to the club", "size": "band", "level": "h2" }
 }

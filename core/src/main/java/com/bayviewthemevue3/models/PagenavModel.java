@@ -26,7 +26,7 @@ import javax.inject.Named;
         "uplabel": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Beschriftung des Übersicht-Links",
+          "x-form-label": "Overview link label",
           "x-form-type": "text"
         },
         "uplink": {
@@ -87,7 +87,7 @@ public class PagenavModel extends AbstractComponent {
     public PagenavModel(final Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Beschriftung des Übersicht-Links","x-form-type":"text"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Overview link label","x-form-type":"text"} */
 	@Inject
 	private String uplabel;
 
@@ -104,7 +104,7 @@ public class PagenavModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Beschriftung des Übersicht-Links","x-form-type":"text"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Overview link label","x-form-type":"text"} */
 	public String getUplabel() {
 		return uplabel;
 	}

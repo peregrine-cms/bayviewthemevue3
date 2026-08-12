@@ -2,9 +2,9 @@
   "title": "Legends",
   "group": "Content",
   "model": {
-    "title": "Die Heimat lokaler Legenden",
-    "text": "<p>Taekwondo Bern ist mehr als nur ein Kampfsportverein – wir sind eine Familie.</p>",
+    "title": "Home of local legends",
+    "text": "<p>Bayview Martial Arts is more than a club — we are a family.</p>",
     "image": "/content/bayviewthemevue3/assets/poomsae-kid.jpg",
-    "imagealt": "Poomsae Grundstellung"
+    "imagealt": "Poomsae stance"
   }
 }

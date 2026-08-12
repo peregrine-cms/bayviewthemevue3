@@ -97,8 +97,8 @@ self.addEventListener('fetch', (event) => {
 function offlineResponse() {
   return new Response(
     '<!doctype html><meta charset="utf-8">' +
-    '<title>Offline – Taekwondo Bern</title>' +
+    '<title>Offline – Bayview Martial Arts</title>' +
     '<p style="font-family:system-ui,sans-serif;padding:2rem">' +
-    'Diese Seite ist offline nicht verfügbar.</p>',
+    'This page is not available offline.</p>',
     { status: 503, headers: { 'Content-Type': 'text/html;charset=utf-8' } });
 }

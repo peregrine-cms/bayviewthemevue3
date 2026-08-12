@@ -1,5 +1,5 @@
 {
-  "title": "Class Times (Trainingszeiten)",
+  "title": "Class Times",
   "group": "Content",
-  "model": { "classname": "Adults", "label": "Trainingszeiten" }
+  "model": { "classname": "Adults", "label": "Class times" }
 }

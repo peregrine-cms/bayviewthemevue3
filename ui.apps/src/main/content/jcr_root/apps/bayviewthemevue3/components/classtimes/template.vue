@@ -1,19 +1,19 @@
 <template>
   <div class="bay-classtimes" :data-per-path="model.path">
     <span class="bay-classtimes__label" v-if="model.label">{{ model.label }}</span>
-    <span class="bay-classtimes__state" v-if="loading">wird geladen &hellip;</span>
+    <span class="bay-classtimes__state" v-if="loading">Loading &hellip;</span>
     <span class="bay-classtimes__state" v-if="error">{{ error }}</span>
     <ul class="bay-classtimes__list" v-if="times.length">
       <li v-for="t in times" :key="t">{{ t }}</li>
     </ul>
-    <span class="bay-classtimes__state" v-if="!loading && !error && !times.length">Zurzeit keine regul&auml;ren Zeiten.</span>
+    <span class="bay-classtimes__state" v-if="!loading && !error && !times.length">No regular sessions right now.</span>
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const DAY_NAMES = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag']
+const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
 const props = defineProps({
   model: { type: Object, required: true, default: () => ({}) }
@@ -26,7 +26,7 @@ const error = ref(null)
 onMounted(() => {
   if (!window.BayCalendar || !props.model.classname) {
     loading.value = false
-    if (!window.BayCalendar) error.value = 'Kalender nicht geladen.'
+    if (!window.BayCalendar) error.value = 'Calendar not loaded.'
     return
   }
   var start = new Date()
@@ -55,7 +55,7 @@ onMounted(() => {
     })
     .catch(function () {
       loading.value = false
-      error.value = 'Zeiten konnten nicht geladen werden.'
+      error.value = 'Could not load session times.'
     })
 })
 </script>

@@ -4,16 +4,16 @@
       <div class="bay-schedule__head">
         <h2 class="bay-schedule__title" v-if="model.title" data-per-inline="model.title">{{ model.title }}</h2>
         <div class="bay-schedule__nav">
-          <button type="button" class="bay-schedule__navbtn" aria-label="Vorherige Woche" @click="weekOffset--">&lsaquo;</button>
+          <button type="button" class="bay-schedule__navbtn" aria-label="Previous week" @click="weekOffset--">&lsaquo;</button>
           <button type="button" class="bay-schedule__quick" :class="{ 'bay-schedule__quick--active': weekOffset === 0 }"
-            @click="weekOffset = 0">Diese Woche</button>
+            @click="weekOffset = 0">This week</button>
           <button type="button" class="bay-schedule__quick" :class="{ 'bay-schedule__quick--active': weekOffset === 1 }"
-            @click="weekOffset = 1">N&auml;chste Woche</button>
-          <button type="button" class="bay-schedule__navbtn" aria-label="N&auml;chste Woche" @click="weekOffset++">&rsaquo;</button>
+            @click="weekOffset = 1">Next week</button>
+          <button type="button" class="bay-schedule__navbtn" aria-label="Next week" @click="weekOffset++">&rsaquo;</button>
         </div>
       </div>
       <p class="bay-schedule__weeklabel">{{ weekLabel }}</p>
-      <p class="bay-schedule__state" v-if="loading">Wochenplan wird geladen &hellip;</p>
+      <p class="bay-schedule__state" v-if="loading">Loading schedule &hellip;</p>
       <p class="bay-schedule__state" v-if="error">{{ error }}</p>
       <div class="bay-schedule__grid" v-if="!loading && !error">
         <div class="bay-schedule__day" v-for="day in visibleDays" :key="day.iso"
@@ -38,7 +38,7 @@
 <script setup>
 import { ref, computed, watch, onMounted } from 'vue'
 
-const DAY_NAMES = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag']
+const DAY_NAMES = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 const props = defineProps({
   model: { type: Object, required: true, default: () => ({}) }
@@ -74,8 +74,8 @@ const weekLabel = computed(() => {
   var end = new Date(start.getTime())
   end.setDate(end.getDate() + 6)
   var kw = isoWeek(start)
-  return 'KW ' + kw + ' · ' + start.getDate() + '.' + (start.getMonth() + 1) + '.' +
-    '–' + end.getDate() + '.' + (end.getMonth() + 1) + '.' + end.getFullYear()
+  return 'Week ' + kw + ' · ' + (start.getMonth() + 1) + '/' + start.getDate() +
+    '–' + (end.getMonth() + 1) + '/' + end.getDate() + '/' + end.getFullYear()
 })
 
 const days = computed(() => {
@@ -111,7 +111,7 @@ const visibleDays = computed(() => {
 function loadWeek() {
   if (!window.BayCalendar) {
     loading.value = false
-    error.value = 'Kalender-Bibliothek nicht geladen.'
+    error.value = 'Calendar library not loaded.'
     return
   }
   loading.value = true
@@ -126,7 +126,7 @@ function loadWeek() {
     })
     .catch(function () {
       loading.value = false
-      error.value = 'Wochenplan konnte nicht geladen werden.'
+      error.value = 'Could not load the weekly schedule.'
     })
 }
 

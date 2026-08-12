@@ -5,9 +5,9 @@
     "schema": "/content/bayviewthemevue3/objects/forms/contact/schema.json",
     "uischema": "/content/bayviewthemevue3/objects/forms/contact/uischema.json",
     "endpointurl": "https://formspree.io/f/YOUR_FORM_ID",
-    "submittext": "Senden",
-    "successmessage": "Danke! Wir melden uns bei Dir.",
-    "failmessage": "Senden fehlgeschlagen – bitte versuche es später noch einmal.",
+    "submittext": "Send",
+    "successmessage": "Thanks! We'll be in touch.",
+    "failmessage": "Could not send — please try again later.",
     "style": "light",
     "submitstyle": "black"
   }

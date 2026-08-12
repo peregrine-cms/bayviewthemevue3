@@ -6,10 +6,12 @@
 > renderer.
 
 A muted-teal club theme for Peregrine CMS — a conversion of the "Bayview FC"
-design study, carrying content and imagery from
-[taekwondobern.ch](https://taekwondobern.ch/). Follows the capstheme
-architecture (fragments + `percli hatch3 (dialogs/models only)` +
-pagerendervue3).
+design study. Follows the capstheme architecture (fragments +
+`percli hatch3 (dialogs/models only)` + pagerendervue3).
+
+Sample content is a fictional club, "Bayview Martial Arts", in English, with
+`hello@example.com` as the contact address. It exists to exercise every
+component, not to be kept — replace it wholesale.
 
 ## Design language
 

@@ -7,7 +7,7 @@
         "uplabel": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Beschriftung des Übersicht-Links",
+          "x-form-label": "Overview link label",
           "x-form-type": "text"
         },
         "uplink": { "$ref": "schemas/shared.json#/definitions/link" },

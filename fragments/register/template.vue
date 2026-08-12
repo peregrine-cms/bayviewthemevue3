@@ -17,7 +17,7 @@
         <label class="bay-register__label" for="bay-reg-email">{{ model.emaillabel || 'E-Mail' }}</label>
         <input class="bay-register__input" id="bay-reg-email" name="email" type="email" v-model="email">
         <template v-if="model.leagues && model.leagues.length">
-          <p class="bay-register__label">{{ model.leaguelabel || 'Training wählen' }}</p>
+          <p class="bay-register__label">{{ model.leaguelabel || 'Choose a class' }}</p>
           <button type="button" class="bay-register__option" :class="{ 'bay-register__option--active': league === opt.text }"
                   v-for="opt in model.leagues" :key="opt.text" @click="league = opt.text">{{ opt.text }}</button>
         </template>
@@ -30,11 +30,11 @@
              not carry them to the endpoint. Mirror them into hidden fields. -->
         <input type="hidden" name="training" :value="league">
         <input type="hidden" name="niveau" :value="level">
-        <input type="hidden" name="_subject" :value="'Anmeldung ' + (name || 'Website')">
+        <input type="hidden" name="_subject" :value="'Registration ' + (name || 'Website')">
         <!-- Honeypot: bots fill every field they find. Real users never see it,
              and Formspree drops the submission when it arrives non-empty. -->
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="bay-hp">
-        <button class="bay-register__submit" type="submit" :disabled="status === 'sending'">{{ status === 'sending' ? (model.sendingtext || 'Wird gesendet…') : (model.buttontext || 'Anmelden') }}</button>
+        <button class="bay-register__submit" type="submit" :disabled="status === 'sending'">{{ status === 'sending' ? (model.sendingtext || 'Sending…') : (model.buttontext || 'Anmelden') }}</button>
         <p class="bay-register__status" role="status" aria-live="polite" v-if="status === 'ok' || status === 'error'">{{ status === 'ok' ? (model.successtext || 'Danke! Wir melden uns bei Dir.') : (model.errortext || 'Das hat leider nicht geklappt. Bitte versuche es erneut oder schreib uns direkt.') }}</p>
         <p class="bay-register__note" v-if="model.note">{{ model.note }}</p>
       </form>
@@ -105,7 +105,7 @@ function onSubmit(e) {
   const action = props.model.action || ''
   if (action.indexOf('mailto:') === 0) {
     e.preventDefault()
-    const subject = encodeURIComponent('Anmeldung ' + name.value)
+    const subject = encodeURIComponent('Registration ' + name.value)
     const body = encodeURIComponent(
       'Name: ' + name.value + '\nAlter: ' + age.value + '\nE-Mail: ' + email.value +
       '\nTraining: ' + league.value + '\nNiveau: ' + level.value)

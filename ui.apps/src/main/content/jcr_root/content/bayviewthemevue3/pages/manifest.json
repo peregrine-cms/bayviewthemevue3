@@ -1,11 +1,11 @@
 {
-  "short_name": "TKD Bern",
-  "name": "Taekwondo Bern",
-  "description": "Taekwondo Bern – olympisches Taekwondo für alle Altersstufen in Gümligen bei Bern.",
+  "short_name": "Bayview MA",
+  "name": "Bayview Martial Arts",
+  "description": "Bayview Martial Arts — classes for every age, at the Harbour Road dojang.",
   "display": "standalone",
   "theme_color": "#557d81",
   "background_color": "#ffffff",
-  "lang": "de-CH",
+  "lang": "en",
   "icons": [
     {
       "src": "/content/bayviewthemevue3/assets/icons/launcher-icon-1x.png",

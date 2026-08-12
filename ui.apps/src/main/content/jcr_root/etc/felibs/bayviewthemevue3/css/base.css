@@ -62,7 +62,7 @@ p {
 
 /* Word-breaking, NARROW SCREENS ONLY.
    Long unbreakable tokens are what actually pin a layout wider than the
-   viewport: e-mail addresses (info@taekwondobern.ch is ~300px at a scaled-up
+   viewport: e-mail addresses (hello@example.com is ~300px at a scaled-up
    root font), URLs, German compounds, and the uppercase display headings.
    Pairs with the minmax(0, 1fr) tracks — the track can shrink, and the word
    can break.

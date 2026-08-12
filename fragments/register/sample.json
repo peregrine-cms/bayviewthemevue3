@@ -2,15 +2,15 @@
   "title": "Register",
   "group": "Content",
   "model": {
-    "title": "Anmelden",
-    "text": "<p>Trainiere mit uns – ein Training, ein Kick und eine grosse Portion Selbstvertrauen nach dem anderen.</p>",
-    "namelabel": "Vollständiger Name",
-    "agelabel": "Alter",
-    "emaillabel": "E-Mail Adresse",
-    "leaguelabel": "Training wählen",
-    "levellabel": "Niveau",
-    "buttontext": "Jetzt anmelden",
-    "note": "Deine Daten werden vertraulich behandelt. Niemals Passwörter senden.",
-    "action": "mailto:info@taekwondobern.ch"
+    "title": "Sign up",
+    "text": "<p>Train with us — one class, one kick and a large helping of confidence at a time.</p>",
+    "namelabel": "Full name",
+    "agelabel": "Age",
+    "emaillabel": "Email address",
+    "leaguelabel": "Choose a class",
+    "levellabel": "Level",
+    "buttontext": "Sign up now",
+    "note": "Your details stay confidential. Never send passwords.",
+    "action": "mailto:hello@example.com"
   }
 }

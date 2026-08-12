@@ -5,7 +5,7 @@
       <span class="bay-pagenav__title">{{ prev.title }}</span>
     </a>
     <span class="bay-pagenav__spacer" v-else></span>
-    <a class="bay-pagenav__up" v-if="model.uplink" :href="$helper.pathToUrl(model.uplink)">{{ model.uplabel || '&Uuml;bersicht' }}</a>
+    <a class="bay-pagenav__up" v-if="model.uplink" :href="$helper.pathToUrl(model.uplink)">{{ model.uplabel || 'Overview' }}</a>
     <a class="bay-pagenav__link bay-pagenav__link--next" v-if="next" :href="next.url">
       <span class="bay-pagenav__title">{{ next.title }}</span>
       <span class="bay-pagenav__arrow">&rsaquo;</span>

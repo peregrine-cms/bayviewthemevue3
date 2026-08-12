@@ -17,108 +17,108 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bayviewthemevue3/components/herosplit"
                 image="/content/bayviewthemevue3/assets/flying-kick.jpg"
-                imagealt="Freestyle Kick im Dojang"
-                logotext="TAE KWON DO BERN"
-                kicker="Lokale Verbundenheit und starke Taekwondo Förderung für alle Altersstufen"
-                title="Willkommen im Club"
-                ctatext="Schnuppertraining"
+                imagealt="Freestyle kick in the dojang"
+                logotext="BAYVIEW MARTIAL ARTS"
+                kicker="Rooted in the neighbourhood, strong martial arts for every age"
+                title="Welcome to the club"
+                ctatext="Try a class"
                 ctalink="/content/bayviewthemevue3/pages/index"/>
             <legends
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bayviewthemevue3/components/legends"
-                title="Die Heimat lokaler Legenden"
-                text="&lt;p&gt;Taekwondo Bern ist mehr als nur ein Kampfsportverein – wir sind eine Familie. Von Tigern, die ihre ersten Schritte auf der Matte machen, bis zu Athlet*innen, die noch ein Ziel mehr jagen.&lt;/p&gt;"
+                title="Home of local legends"
+                text="&lt;p&gt;Bayview Martial Arts is more than a club — we are a family. From cubs taking their first steps on the mat to athletes chasing one more title.&lt;/p&gt;"
                 image="/content/bayviewthemevue3/assets/poomsae-kid.jpg"
-                imagealt="Poomsae Grundstellung"/>
+                imagealt="Poomsae stance"/>
             <sponsors
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bayviewthemevue3/components/sponsorband"
-                title="Danke an unsere Unterstützer"
+                title="Thanks to our supporters"
                 image="/content/bayviewthemevue3/assets/dojang-action.jpg"
-                imagealt="Training im Dojang">
+                imagealt="Training in the dojang">
                 <sponsors jcr:primaryType="nt:unstructured">
-                    <i0 jcr:primaryType="nt:unstructured" name="Sportfonds Kanton Bern" link="https://www.fobe.sid.be.ch/de/start/sportfonds.html"/>
-                    <i1 jcr:primaryType="nt:unstructured" name="Migros Support my Camp" link="https://supportmycamp.migros.ch/de/vereine/taekwondo-bern/"/>
-                    <i2 jcr:primaryType="nt:unstructured" name="Power Arena"/>
-                    <i3 jcr:primaryType="nt:unstructured" name="Swiss Taekwondo"/>
+                    <i0 jcr:primaryType="nt:unstructured" name="Harbour Sports Fund" link="https://example.com/sports-fund"/>
+                    <i1 jcr:primaryType="nt:unstructured" name="Bayview Grocers" link="https://example.com/grocers"/>
+                    <i2 jcr:primaryType="nt:unstructured" name="Harbour Arena"/>
+                    <i3 jcr:primaryType="nt:unstructured" name="National Martial Arts"/>
                 </sponsors>
             </sponsors>
             <register
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bayviewthemevue3/components/register"
-                title="Anmelden"
-                text="&lt;p&gt;Trainiere mit uns – ein Training, ein Kick und eine grosse Portion Selbstvertrauen nach dem anderen.&lt;/p&gt;"
-                namelabel="Vollständiger Name"
-                doblabel="Geburtsdatum"
-                emaillabel="E-Mail Adresse"
-                leaguelabel="Training wählen"
-                levellabel="Niveau"
-                buttontext="Jetzt anmelden"
-                note="Deine Daten werden vertraulich behandelt. Niemals Passwörter senden."
-                action="mailto:info@taekwondobern.ch">
+                title="Sign up"
+                text="&lt;p&gt;Train with us — one class, one kick and a large helping of confidence at a time.&lt;/p&gt;"
+                namelabel="Full name"
+                doblabel="Date of birth"
+                emaillabel="Email address"
+                leaguelabel="Choose a class"
+                levellabel="Level"
+                buttontext="Sign up now"
+                note="Your details stay confidential. Never send passwords."
+                action="mailto:hello@example.com">
                 <leagues jcr:primaryType="nt:unstructured">
-                    <i0 jcr:primaryType="nt:unstructured" text="Tiger (4+)"/>
-                    <i1 jcr:primaryType="nt:unstructured" text="Familie"/>
-                    <i2 jcr:primaryType="nt:unstructured" text="Jugend"/>
-                    <i3 jcr:primaryType="nt:unstructured" text="Erwachsene"/>
+                    <i0 jcr:primaryType="nt:unstructured" text="Cubs (4+)"/>
+                    <i1 jcr:primaryType="nt:unstructured" text="Family"/>
+                    <i2 jcr:primaryType="nt:unstructured" text="Youth"/>
+                    <i3 jcr:primaryType="nt:unstructured" text="Adults"/>
                 </leagues>
                 <levels jcr:primaryType="nt:unstructured">
-                    <i0 jcr:primaryType="nt:unstructured" text="Fortgeschritten"/>
-                    <i1 jcr:primaryType="nt:unstructured" text="Mittelstufe"/>
-                    <i2 jcr:primaryType="nt:unstructured" text="Anfänger*in"/>
+                    <i0 jcr:primaryType="nt:unstructured" text="Advanced"/>
+                    <i1 jcr:primaryType="nt:unstructured" text="Intermediate"/>
+                    <i2 jcr:primaryType="nt:unstructured" text="Beginner"/>
                 </levels>
             </register>
             <leagues
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bayviewthemevue3/components/leagues"
-                title="Unsere Trainings">
+                title="Our classes">
                 <items jcr:primaryType="nt:unstructured">
-                    <i0 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/team-kids.jpg" imagealt="Tiger Training" title="Tiger Training" text="Unsere Tiger (4–7 Jahre) trainieren in kleineren Gruppen mit viel Spiel und Spass."/>
-                    <i1 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/dojang-action.jpg" imagealt="Familien Training" title="Familien Training" text="Eltern trainieren mit ihren Kindern im selben Team – für alle Altersstufen."/>
-                    <i2 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/team-adults.jpg" imagealt="Erwachsenen Training" title="Erwachsenen Training" text="Ab 16 Jahren trainieren alle gemeinsam – vom weissen bis zum schwarzen Gürtel."/>
+                    <i0 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/team-kids.jpg" imagealt="Cubs class" title="Cubs class" text="Our cubs (ages 4–7) train in small groups, with plenty of games along the way."/>
+                    <i1 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/dojang-action.jpg" imagealt="Family class" title="Family class" text="Parents train alongside their children in the same group — every age welcome."/>
+                    <i2 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/team-adults.jpg" imagealt="Adults class" title="Adults class" text="From 16 up, everyone trains together — white belt through black belt."/>
                 </items>
             </leagues>
             <keydates
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bayviewthemevue3/components/keydates"
-                title="Termine"
-                datelabel="Datum"
+                title="Key dates"
+                datelabel="Date"
                 eventlabel="Event"
                 image="/content/bayviewthemevue3/assets/sparring.jpg"
-                imagealt="Kyorugi Sparring">
+                imagealt="Kyorugi sparring">
                 <items jcr:primaryType="nt:unstructured">
-                    <i0 jcr:primaryType="nt:unstructured" date="22. Februar" event="Swiss Taekwondo Coach Education B"/>
-                    <i1 jcr:primaryType="nt:unstructured" date="28. Februar" event="Training Nationalmannschaft"/>
-                    <i2 jcr:primaryType="nt:unstructured" date="1. März" event="Test Match Day (Daedo Gen 3)"/>
-                    <i3 jcr:primaryType="nt:unstructured" date="30.–31. Mai" event="Winterthur Trophy (Kyorugi)"/>
-                    <i4 jcr:primaryType="nt:unstructured" date="20. Juni" event="Dan Promotion, Wattwil"/>
-                    <i5 jcr:primaryType="nt:unstructured" date="Jeden Freitag" event="Fight Night in der Power Arena"/>
+                    <i0 jcr:primaryType="nt:unstructured" date="February 22" event="Coach Education, Level B"/>
+                    <i1 jcr:primaryType="nt:unstructured" date="February 28" event="National squad training"/>
+                    <i2 jcr:primaryType="nt:unstructured" date="March 1" event="Test Match Day"/>
+                    <i3 jcr:primaryType="nt:unstructured" date="May 30–31" event="Harbour Trophy (Kyorugi)"/>
+                    <i4 jcr:primaryType="nt:unstructured" date="June 20" event="Dan grading"/>
+                    <i5 jcr:primaryType="nt:unstructured" date="Every Friday" event="Fight Night at the Harbour Arena"/>
                 </items>
             </keydates>
             <gallery
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bayviewthemevue3/components/gallery"
-                text="&lt;p&gt;Momente, Medaillen und viele Lachen.&lt;br&gt;Das ist mehr als Sport – das ist eine Community.&lt;/p&gt;">
+                text="&lt;p&gt;Moments, medals and a lot of laughing.&lt;br&gt;This is more than a sport — it is a community.&lt;/p&gt;">
                 <images jcr:primaryType="nt:unstructured">
-                    <i0 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/team-kids.jpg" imagealt="Unsere Tiger"/>
+                    <i0 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/team-kids.jpg" imagealt="Our cubs"/>
                     <i1 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/sparring2.jpg" imagealt="Sparring"/>
-                    <i2 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/presidents.jpg" imagealt="Co-Präsidentinnen"/>
-                    <i3 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/poomsae-comp.jpg" imagealt="Poomsae Wettkampf"/>
-                    <i4 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/photoshoot.jpg" imagealt="Fototermin"/>
+                    <i2 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/presidents.jpg" imagealt="Club co-chairs"/>
+                    <i3 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/poomsae-comp.jpg" imagealt="Poomsae competition"/>
+                    <i4 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/photoshoot.jpg" imagealt="Team photo shoot"/>
                 </images>
             </gallery>
             <contact
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bayviewthemevue3/components/contact"
-                title="Kontakt"
+                title="Contact"
                 image="/content/bayviewthemevue3/assets/poomsae-kid.jpg"
-                imagealt="Poomsae Training"
+                imagealt="Poomsae practice"
                 namelabel="Name"
-                emaillabel="E-Mail Adresse"
-                messagelabel="Deine Nachricht"
-                buttontext="Senden"
-                note="Kostenloses Schnuppertraining – kontaktiere uns!"
-                action="mailto:info@taekwondobern.ch"/>
+                emaillabel="Email address"
+                messagelabel="Your message"
+                buttontext="Send"
+                note="Free trial class — get in touch!"
+                action="mailto:hello@example.com"/>
         </main>
     </jcr:content>
 </jcr:root>

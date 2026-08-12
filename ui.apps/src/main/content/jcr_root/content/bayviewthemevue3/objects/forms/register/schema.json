@@ -1,18 +1,18 @@
 {
   "type": "object",
   "properties": {
-    "name": { "type": "string", "title": "Vollständiger Name" },
+    "name": { "type": "string", "title": "Full name" },
     "geburtsdatum": { "type": "string", "title": "Geburtsdatum" },
-    "email": { "type": "string", "format": "email", "title": "E-Mail Adresse" },
+    "email": { "type": "string", "format": "email", "title": "Email address" },
     "training": {
       "type": "string",
-      "title": "Training wählen",
+      "title": "Choose a class",
       "enum": ["Tiger (4+)", "Familie", "Jugend", "Erwachsene"]
     },
     "niveau": {
       "type": "string",
-      "title": "Niveau",
-      "enum": ["Fortgeschritten", "Mittelstufe", "Anfänger*in"]
+      "title": "Level",
+      "enum": ["Advanced", "Intermediate", "Beginner"]
     }
   },
   "required": ["name", "email", "training"]

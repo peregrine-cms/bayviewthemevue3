@@ -3,11 +3,11 @@
   "group": "Content",
   "model": {
     "image": "/content/bayviewthemevue3/assets/flying-kick.jpg",
-    "imagealt": "Freestyle Kick im Dojang",
-    "logotext": "TAE KWON DO BERN",
-    "kicker": "Lokale Verbundenheit und starke Taekwondo Förderung für alle Altersstufen",
-    "title": "Willkommen im Club",
-    "ctatext": "Schnuppertraining",
+    "imagealt": "Freestyle kick in the dojang",
+    "logotext": "BAYVIEW MARTIAL ARTS",
+    "kicker": "Rooted in the neighbourhood, strong martial arts for every age",
+    "title": "Welcome to the club",
+    "ctatext": "Try a class",
     "ctalink": "/content/bayviewthemevue3/pages/index"
   }
 }

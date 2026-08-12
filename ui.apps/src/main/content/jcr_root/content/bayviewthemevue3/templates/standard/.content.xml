@@ -21,7 +21,7 @@
             variant="badge"
             shrink="true"
             logo="/content/bayviewthemevue3/assets/logo.png"
-            logoalt="Taekwondo Bern – White Tiger Crest"
+            logoalt="Bayview Martial Arts crest"
             brandlink="/content/bayviewthemevue3/pages/index">
             <navitems jcr:primaryType="nt:unstructured">
                 <i0 jcr:primaryType="nt:unstructured" text="Home" link="/content/bayviewthemevue3/pages/index"/>
@@ -32,12 +32,12 @@
         <footer
             jcr:primaryType="nt:unstructured"
             sling:resourceType="bayviewthemevue3/components/footer"
-            brand="TAE KWON DO BERN"
-            address="&lt;p&gt;Feldstrasse 32a&lt;br&gt;3073 Gümligen bei Bern&lt;/p&gt;"
-            email="info@taekwondobern.ch"
-            social="@kim_taekwondo_bern"
-            copyright="© 2026 Taekwondo Bern – Alle Rechte vorbehalten."
+            brand="BAYVIEW MARTIAL ARTS"
+            address="&lt;p&gt;1 Harbour Road&lt;br&gt;Bayview&lt;/p&gt;"
+            email="hello@example.com"
+            social="@bayviewmartialarts"
+            copyright="© 2026 Bayview Martial Arts – All rights reserved."
             image="/content/bayviewthemevue3/assets/team-adults.jpg"
-            imagealt="Unser Team"/>
+            imagealt="Our team"/>
     </jcr:content>
 </jcr:root>

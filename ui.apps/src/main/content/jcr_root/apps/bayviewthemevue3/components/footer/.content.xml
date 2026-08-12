@@ -2,10 +2,10 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Footer">
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
     <sample jcr:primaryType="nt:unstructured" title="Footer" group="Structure">
-      <jcr:content jcr:primaryType="nt:unstructured" brand="TAE KWON DO BERN" address="&lt;p>Feldstrasse 32a&lt;br>3073 Gümligen bei Bern&lt;/p>" email="info@taekwondobern.ch" social="@kim_taekwondo_bern" copyright="© 2026 Taekwondo Bern – Alle Rechte vorbehalten." image="/content/bayviewthemevue3/assets/team-adults.jpg" imagealt="Unser Team"/>
+      <jcr:content jcr:primaryType="nt:unstructured" brand="BAYVIEW MARTIAL ARTS" address="&lt;p>1 Harbour Road&lt;br>Bayview&lt;/p>" email="hello@example.com" social="@bayviewmartialarts" copyright="© 2026 Bayview Martial Arts – All rights reserved." image="/content/bayviewthemevue3/assets/team-adults.jpg" imagealt="Our team"/>
     </sample>
     <sample-mirrored jcr:primaryType="nt:unstructured" title="Footer (mirrored)" group="Structure">
-      <jcr:content jcr:primaryType="nt:unstructured" brand="TAE KWON DO BERN" address="&lt;p>Feldstrasse 32a&lt;br>3073 Gümligen bei Bern&lt;/p>" email="info@taekwondobern.ch" social="@kim_taekwondo_bern" copyright="© 2026 Taekwondo Bern – Alle Rechte vorbehalten." image="/content/bayviewthemevue3/assets/team-adults.jpg" imagealt="Unser Team" swap="true"/>
+      <jcr:content jcr:primaryType="nt:unstructured" brand="BAYVIEW MARTIAL ARTS" address="&lt;p>1 Harbour Road&lt;br>Bayview&lt;/p>" email="hello@example.com" social="@bayviewmartialarts" copyright="© 2026 Bayview Martial Arts – All rights reserved." image="/content/bayviewthemevue3/assets/team-adults.jpg" imagealt="Our team" swap="true"/>
     </sample-mirrored>
   </jcr:content>
 </jcr:root>

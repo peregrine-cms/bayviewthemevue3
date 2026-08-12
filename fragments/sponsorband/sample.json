@@ -2,8 +2,8 @@
   "title": "Sponsor Band",
   "group": "Content",
   "model": {
-    "title": "Danke an unsere Unterstützer",
+    "title": "Thanks to our supporters",
     "image": "/content/bayviewthemevue3/assets/dojang-action.jpg",
-    "imagealt": "Training im Dojang"
+    "imagealt": "Training in the dojang"
   }
 }

@@ -2,14 +2,14 @@
   "title": "Contact",
   "group": "Content",
   "model": {
-    "title": "Kontakt",
+    "title": "Contact",
     "image": "/content/bayviewthemevue3/assets/poomsae-kid.jpg",
-    "imagealt": "Poomsae Training",
+    "imagealt": "Poomsae practice",
     "namelabel": "Name",
-    "emaillabel": "E-Mail Adresse",
-    "messagelabel": "Deine Nachricht",
-    "buttontext": "Senden",
-    "note": "Kostenloses Schnuppertraining – kontaktiere uns!",
-    "action": "mailto:info@taekwondobern.ch"
+    "emaillabel": "Email address",
+    "messagelabel": "Your message",
+    "buttontext": "Send",
+    "note": "Free trial class — get in touch!",
+    "action": "mailto:hello@example.com"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "title": "Event List (Termine)",
+  "title": "Event List",
   "group": "Content",
   "model": {
-    "title": "Termine",
+    "title": "Key dates",
     "daysahead": "120",
     "showlocation": "true"
   }

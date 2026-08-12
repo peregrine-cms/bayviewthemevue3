@@ -8,7 +8,7 @@
       <component :is="JsonForms" :key="jsonFormsKey" :data="form" :schema="schema" :uischema="uischema"
         :renderers="renderers" :validation-mode="validationMode" @change="onChange"></component>
       <button class="bay-form__submit" :class="'bay-form__submit--' + (model.submitstyle || 'black')"
-        type="submit">{{ model.submittext || 'Senden' }}</button>
+        type="submit">{{ model.submittext || 'Send' }}</button>
       <p class="bay-form__success" v-if="successText">{{ successText }}</p>
       <p class="bay-form__failure" v-if="failureText">{{ failureText }}</p>
     </form>

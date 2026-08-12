@@ -49,16 +49,16 @@
         "source": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Datenquelle",
+          "x-form-label": "Data source",
           "x-form-type": "materialselect",
           "x-default": "manual",
           "properties": {
             "manual": {
-              "x-form-name": "Manuelle Einträge",
+              "x-form-name": "Manual entries",
               "x-form-value": "manual"
             },
             "ical": {
-              "x-form-name": "Google Kalender (ganztägige Events)",
+              "x-form-name": "Google Calendar (all-day events)",
               "x-form-value": "ical"
             }
           }
@@ -75,7 +75,7 @@
         "maxitems": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Maximale Einträge (0 = alle)",
+          "x-form-label": "Maximum entries (0 = all)",
           "x-form-type": "text"
         },
         "videourl": {

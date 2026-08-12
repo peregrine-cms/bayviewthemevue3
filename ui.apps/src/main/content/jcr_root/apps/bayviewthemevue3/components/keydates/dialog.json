@@ -125,16 +125,16 @@
           "type": "material-select",
           "values": [
             {
-              "name": "Manuelle Einträge",
+              "name": "Manual entries",
               "value": "manual"
             },
             {
-              "name": "Google Kalender (ganztägige Events)",
+              "name": "Google Calendar (all-day events)",
               "value": "ical"
             }
           ],
           "placeholder": "source",
-          "label": "Datenquelle",
+          "label": "Data source",
           "model": "source"
         },
         {
@@ -149,7 +149,7 @@
           "type": "input",
           "inputType": "text",
           "placeholder": "maxitems",
-          "label": "Maximale Einträge (0 = alle)",
+          "label": "Maximum entries (0 = all)",
           "model": "maxitems"
         },
         {

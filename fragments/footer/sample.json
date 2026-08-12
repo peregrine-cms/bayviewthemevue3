@@ -2,12 +2,12 @@
   "title": "Footer",
   "group": "Structure",
   "model": {
-    "brand": "TAE KWON DO BERN",
-    "address": "<p>Feldstrasse 32a<br>3073 Gümligen bei Bern</p>",
-    "email": "info@taekwondobern.ch",
-    "social": "@kim_taekwondo_bern",
-    "copyright": "© 2026 Taekwondo Bern – Alle Rechte vorbehalten.",
+    "brand": "BAYVIEW MARTIAL ARTS",
+    "address": "<p>1 Harbour Road<br>Bayview</p>",
+    "email": "hello@example.com",
+    "social": "@bayviewmartialarts",
+    "copyright": "© 2026 Bayview Martial Arts – All rights reserved.",
     "image": "/content/bayviewthemevue3/assets/team-adults.jpg",
-    "imagealt": "Unser Team"
+    "imagealt": "Our team"
   }
 }

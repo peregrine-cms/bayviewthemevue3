@@ -69,7 +69,7 @@
       priority: [String, Boolean],
       // Names the consequence, so the click is informed consent rather than a
       // bare play button that silently loads a third party.
-      playLabel: { type: String, default: 'Video abspielen – lädt Vimeo (setzt Cookies)' }
+      playLabel: { type: String, default: 'Play video – loads Vimeo (sets cookies)' }
     },
     data: function () {
       return { playing: false };

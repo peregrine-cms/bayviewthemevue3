@@ -16,7 +16,7 @@
           :data-noroute="item.member ? '' : null">{{ item.text }}</a>
         <div class="bay-header__more" v-if="overflowItems.length">
           <button type="button" class="bay-header__morebtn" :aria-expanded="moreOpen ? 'true' : 'false'"
-            aria-haspopup="true" @click.stop="moreOpen = !moreOpen">Mehr
+            aria-haspopup="true" @click.stop="moreOpen = !moreOpen">More
             <svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1 L6 6 L11 1" fill="none" stroke="currentColor" stroke-width="2"/></svg>
           </button>
           <div class="bay-header__morepanel" v-show="moreOpen">
@@ -27,7 +27,7 @@
         </div>
       </nav>
       <button type="button" class="bay-header__burger" :class="{ 'bay-header__burger--open': menuOpen }"
-        :aria-expanded="menuOpen ? 'true' : 'false'" aria-label="Menü"
+        :aria-expanded="menuOpen ? 'true' : 'false'" aria-label="Menu"
         v-if="navItems.length" @click.stop="menuOpen = !menuOpen">
         <span></span><span></span><span></span>
       </button>
@@ -92,7 +92,7 @@ const navItems = computed(() => {
   if (!link) return items
   items.push({
     text: loggedIn.value
-      ? (props.model.internlabel || 'Intern')
+      ? (props.model.internlabel || 'Members')
       : (props.model.loginlabel || 'Login'),
     link: link,
     member: true

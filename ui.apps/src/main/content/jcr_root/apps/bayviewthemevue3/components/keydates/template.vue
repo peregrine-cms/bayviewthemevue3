@@ -18,7 +18,7 @@
             </tr>
           </tbody>
           <tbody v-else>
-            <tr v-if="icalLoading"><td colspan="2">Termine werden geladen &hellip;</td></tr>
+            <tr v-if="icalLoading"><td colspan="2">Loading events &hellip;</td></tr>
             <tr v-if="icalError"><td colspan="2">{{ icalError }}</td></tr>
             <tr v-for="ev in icalEvents" :key="ev.title + ev.start.getTime()">
               <td>{{ fmtRange(ev) }}</td>
@@ -47,8 +47,8 @@ import { ref, computed, watch, onMounted } from 'vue'
 const $peregrineApp = window.$peregrineApp
 const $helper = $peregrineApp.helpers
 
-const MONTHS = ['Januar', 'Februar', 'M\u00e4rz', 'April', 'Mai', 'Juni',
-  'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December']
 
 const props = defineProps({
   model: { type: Object, required: true, default: () => ({}) }
@@ -78,7 +78,7 @@ const isEditAndEmpty = computed(() => {
 
 function loadIcal() {
   if (!window.BayCalendar) {
-    icalError.value = 'Kalender-Bibliothek nicht geladen.'
+    icalError.value = 'Calendar library not loaded.'
     return
   }
   icalLoading.value = true
@@ -92,7 +92,7 @@ function loadIcal() {
     })
     .catch(function () {
       icalLoading.value = false
-      icalError.value = 'Termine konnten nicht geladen werden.'
+      icalError.value = 'Could not load events.'
     })
 }
 

@@ -21,7 +21,7 @@
         <input type="hidden" name="_subject" :value="'Kontaktanfrage von ' + (name || 'Website')">
         <!-- Honeypot: see register. Hidden from users, filled by bots. -->
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="bay-hp">
-        <button class="bay-contact__submit" type="submit" :disabled="status === 'sending'">{{ status === 'sending' ? (model.sendingtext || 'Wird gesendet…') : (model.buttontext || 'Senden') }}</button>
+        <button class="bay-contact__submit" type="submit" :disabled="status === 'sending'">{{ status === 'sending' ? (model.sendingtext || 'Sending…') : (model.buttontext || 'Send') }}</button>
         <p class="bay-contact__status" role="status" aria-live="polite" v-if="status === 'ok' || status === 'error'">{{ status === 'ok' ? (model.successtext || 'Danke! Wir melden uns bei Dir.') : (model.errortext || 'Das hat leider nicht geklappt. Bitte versuche es erneut oder schreib uns direkt.') }}</p>
         <p class="bay-contact__note" v-if="model.note">{{ model.note }}</p>
       </form>

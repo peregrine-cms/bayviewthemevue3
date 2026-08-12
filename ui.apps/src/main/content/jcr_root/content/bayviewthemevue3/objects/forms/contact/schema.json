@@ -2,8 +2,8 @@
   "type": "object",
   "properties": {
     "name": { "type": "string", "title": "Name" },
-    "email": { "type": "string", "format": "email", "title": "E-Mail Adresse" },
-    "nachricht": { "type": "string", "title": "Deine Nachricht" }
+    "email": { "type": "string", "format": "email", "title": "Email address" },
+    "nachricht": { "type": "string", "title": "Your message" }
   },
   "required": ["name", "email"]
 }

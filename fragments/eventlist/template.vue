@@ -1,9 +1,9 @@
 <template>
   <div class="bay-eventlist" :data-per-path="model.path">
     <h2 class="bay-eventlist__title" v-if="model.title" data-per-inline="model.title">{{ model.title }}</h2>
-    <p class="bay-eventlist__state" v-if="loading">Termine werden geladen &hellip;</p>
+    <p class="bay-eventlist__state" v-if="loading">Loading events &hellip;</p>
     <p class="bay-eventlist__state" v-if="error">{{ error }}</p>
-    <p class="bay-eventlist__state" v-if="!loading && !error && !events.length">Keine anstehenden Termine.</p>
+    <p class="bay-eventlist__state" v-if="!loading && !error && !events.length">No upcoming events.</p>
     <table class="bay-eventlist__table" v-if="events.length">
       <thead>
         <tr>
@@ -26,8 +26,8 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const MONTHS = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
-  'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December']
 
 const props = defineProps({
   model: { type: Object, required: true, default: () => ({}) }
@@ -40,7 +40,7 @@ const error = ref(null)
 onMounted(() => {
   if (!window.BayCalendar) {
     loading.value = false
-    error.value = 'Kalender-Bibliothek nicht geladen.'
+    error.value = 'Calendar library not loaded.'
     return
   }
   var days = parseInt(props.model.daysahead || '120', 10)
@@ -52,7 +52,7 @@ onMounted(() => {
     })
     .catch(function () {
       loading.value = false
-      error.value = 'Termine konnten nicht geladen werden.'
+      error.value = 'Could not load events.'
     })
 })
 

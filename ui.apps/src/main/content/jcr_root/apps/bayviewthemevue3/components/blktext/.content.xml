@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Text" group="Blocks">
-  <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>Taekwondo Bern ist mehr als nur ein Kampfsportverein – wir sind eine Familie.&lt;/p>"/>
+  <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>Bayview Martial Arts is more than a club — we are a family.&lt;/p>"/>
 </jcr:root>
