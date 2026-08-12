@@ -1,0 +1,49 @@
+{
+  "definitions": {
+    "Gallery": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "text": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Intro Text",
+          "x-form-type": "texteditor"
+        },
+        "images": {
+          "type": "object",
+          "x-source": "inject",
+          "x-form-label": "Images (first is the large one)",
+          "x-form-type": "collection",
+          "x-form-fieldLabel": [
+            "imagealt"
+          ],
+          "properties": {
+            "image": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Image",
+              "x-form-type": "pathbrowser",
+              "x-form-browserRoot": "/content/bayviewthemevue3/assets"
+            },
+            "imagealt": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Alt Text",
+              "x-form-type": "text"
+            }
+          }
+        },
+        "swap": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Swap Sides (mirror the two columns)",
+          "x-form-type": "materialswitch"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "texteditor",
+          "rows": 10,
+          "placeholder": "text",
+          "label": "Intro Text",
+          "model": "text"
+        },
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            [
+              "imagealt"
+            ],
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "pathbrowser",
+              "browserRoot": "/content/bayviewthemevue3/assets",
+              "placeholder": "image",
+              "label": "Image",
+              "model": "image"
+            },
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "imagealt",
+              "label": "Alt Text",
+              "model": "imagealt"
+            }
+          ],
+          "placeholder": "images",
+          "label": "Images (first is the large one)",
+          "model": "images"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "swap",
+          "label": "Swap Sides (mirror the two columns)",
+          "model": "swap"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

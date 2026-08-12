@@ -1,0 +1,38 @@
+{
+  "definitions": {
+    "Blkspacer": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "size": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Height",
+          "x-form-type": "materialselect",
+          "x-default": "medium",
+          "properties": {
+            "tiny": {
+              "x-form-name": "Tiny (14px)",
+              "x-form-value": "tiny"
+            },
+            "small": {
+              "x-form-name": "Small (16px)",
+              "x-form-value": "small"
+            },
+            "medium": {
+              "x-form-name": "Medium (40px)",
+              "x-form-value": "medium"
+            },
+            "large": {
+              "x-form-name": "Large (80px)",
+              "x-form-value": "large"
+            }
+          }
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

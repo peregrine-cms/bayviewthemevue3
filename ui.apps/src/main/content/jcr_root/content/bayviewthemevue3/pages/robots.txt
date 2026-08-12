@@ -1,0 +1,14 @@
+# Indexing is deliberately switched off while the site is in preview.
+# To go live: replace the blanket Disallow below with the commented block.
+User-agent: *
+Disallow: /
+
+# --- launch configuration (swap in when the site should be indexed) ---
+# User-agent: *
+# Disallow: /bin/
+# Disallow: /system/
+# Disallow: /perapi/
+# Disallow: /content/admin/
+# Disallow: /apps/
+# Disallow: /libs/
+# Sitemap: https://wwwbern.aemwip.com/sitemap.xml

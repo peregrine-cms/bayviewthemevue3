@@ -1,0 +1,28 @@
+{
+  "definitions": {
+    "Blktable": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "datelabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "First Column Label",
+          "x-form-type": "text"
+        },
+        "eventlabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Second Column Label",
+          "x-form-type": "text"
+        },
+        "items": {
+          "$ref": "schemas/shared.json#/definitions/dateevents"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

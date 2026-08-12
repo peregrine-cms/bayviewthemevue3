@@ -1,0 +1,61 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "title",
+          "label": "Title",
+          "model": "title"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "daysahead",
+          "label": "Days to look ahead",
+          "model": "daysahead",
+          "min": 14,
+          "max": 365
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "maxitems",
+          "label": "Maximum entries (0 = all)",
+          "model": "maxitems"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "showlocation",
+          "label": "Show location",
+          "model": "showlocation"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

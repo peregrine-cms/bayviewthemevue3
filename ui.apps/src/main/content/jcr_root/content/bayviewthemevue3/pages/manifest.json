@@ -1,0 +1,32 @@
+{
+  "short_name": "TKD Bern",
+  "name": "Taekwondo Bern",
+  "description": "Taekwondo Bern – olympisches Taekwondo für alle Altersstufen in Gümligen bei Bern.",
+  "display": "standalone",
+  "theme_color": "#557d81",
+  "background_color": "#ffffff",
+  "lang": "de-CH",
+  "icons": [
+    {
+      "src": "/content/bayviewthemevue3/assets/icons/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/content/bayviewthemevue3/assets/icons/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/content/bayviewthemevue3/assets/icons/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/content/bayviewthemevue3/assets/icons/launcher-icon-8x.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/content/bayviewthemevue3/pages/index.html"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="packageType">application</entry>
+    <entry key="name">bayviewthemevue3-ui.apps</entry>
+    <entry key="group">bayviewthemevue3</entry>
+    <entry key="description">Bayview Theme for Peregrine CMS</entry>
+</properties>

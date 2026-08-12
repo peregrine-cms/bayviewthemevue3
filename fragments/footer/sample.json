@@ -1,0 +1,13 @@
+{
+  "title": "Footer",
+  "group": "Structure",
+  "model": {
+    "brand": "TAE KWON DO BERN",
+    "address": "<p>Feldstrasse 32a<br>3073 Gümligen bei Bern</p>",
+    "email": "info@taekwondobern.ch",
+    "social": "@kim_taekwondo_bern",
+    "copyright": "© 2026 Taekwondo Bern – Alle Rechte vorbehalten.",
+    "image": "/content/bayviewthemevue3/assets/team-adults.jpg",
+    "imagealt": "Unser Team"
+  }
+}

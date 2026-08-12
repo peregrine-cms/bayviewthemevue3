@@ -1,0 +1,199 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "50 / 50",
+              "value": "50-50"
+            },
+            {
+              "name": "58 / 42",
+              "value": "58-42"
+            },
+            {
+              "name": "42 / 58",
+              "value": "42-58"
+            },
+            {
+              "name": "62 / 38",
+              "value": "62-38"
+            },
+            {
+              "name": "38 / 62",
+              "value": "38-62"
+            }
+          ],
+          "placeholder": "ratio",
+          "label": "Column Ratio (left-right)",
+          "model": "ratio"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "White",
+              "value": "white"
+            },
+            {
+              "name": "Cream",
+              "value": "cream"
+            },
+            {
+              "name": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "None (transparent)",
+              "value": "none"
+            }
+          ],
+          "placeholder": "leftbg",
+          "label": "Left Background",
+          "model": "leftbg"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "White",
+              "value": "white"
+            },
+            {
+              "name": "Cream",
+              "value": "cream"
+            },
+            {
+              "name": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "None (transparent)",
+              "value": "none"
+            }
+          ],
+          "placeholder": "rightbg",
+          "label": "Right Background",
+          "model": "rightbg"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "swap",
+          "label": "Swap Sides (mirror the two columns)",
+          "model": "swap"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Medium (420px)",
+              "value": "medium"
+            },
+            {
+              "name": "Tall (540px)",
+              "value": "tall"
+            },
+            {
+              "name": "Large (520px)",
+              "value": "large"
+            }
+          ],
+          "placeholder": "minheight",
+          "label": "Minimum Height",
+          "model": "minheight"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "leftflush",
+          "label": "Left column flush (no padding, media edge-to-edge)",
+          "model": "leftflush"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "rightflush",
+          "label": "Right column flush (no padding, media edge-to-edge)",
+          "model": "rightflush"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Center",
+              "value": "center"
+            },
+            {
+              "name": "Top",
+              "value": "top"
+            },
+            {
+              "name": "Spread (first top, last bottom)",
+              "value": "spread"
+            }
+          ],
+          "placeholder": "valign",
+          "label": "Vertical Alignment",
+          "model": "valign"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Small (14px)",
+              "value": "small"
+            },
+            {
+              "name": "Normal (24-48px)",
+              "value": "normal"
+            }
+          ],
+          "placeholder": "gap",
+          "label": "Gap between columns",
+          "model": "gap"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

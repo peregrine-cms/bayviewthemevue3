@@ -1,0 +1,141 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Lockup (mark + wordmark)",
+              "value": "default"
+            },
+            {
+              "name": "Sticky (pins to top on scroll)",
+              "value": "sticky"
+            },
+            {
+              "name": "Badge (crest overhangs the content)",
+              "value": "badge"
+            },
+            {
+              "name": "Centered (crest above nav)",
+              "value": "centered"
+            }
+          ],
+          "placeholder": "variant",
+          "label": "Header Style",
+          "model": "variant"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/bayviewthemevue3/assets",
+          "placeholder": "logo",
+          "label": "Logo Image (top left, shown next to the brand text)",
+          "model": "logo"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "logoalt",
+          "label": "Logo Alt Text",
+          "model": "logoalt"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "brand",
+          "label": "Brand Wordmark",
+          "model": "brand"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content",
+          "placeholder": "brandlink",
+          "label": "Brand Link",
+          "model": "brandlink"
+        },
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            [
+              "text"
+            ],
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "text",
+              "label": "Label",
+              "model": "text"
+            },
+            {
+              "type": "pathbrowser",
+              "browserRoot": "/content",
+              "placeholder": "link",
+              "label": "Link",
+              "model": "link"
+            }
+          ],
+          "placeholder": "navitems",
+          "label": "Navigation Items",
+          "model": "navitems"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content",
+          "placeholder": "internlink",
+          "label": "Internal Area Link (blank = hide)",
+          "model": "internlink"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "internlabel",
+          "label": "Internal Area Label (logged in)",
+          "model": "internlabel"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "loginlabel",
+          "label": "Internal Area Label (logged out)",
+          "model": "loginlabel"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "shrink",
+          "label": "Shrink logo on scroll (sticky and badge styles)",
+          "model": "shrink"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

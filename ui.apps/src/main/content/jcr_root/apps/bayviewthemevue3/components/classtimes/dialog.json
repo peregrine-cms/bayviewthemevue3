@@ -1,0 +1,43 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "classname",
+          "label": "Klassenname (wie im Kalender, z.B. 'Adults')",
+          "model": "classname"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "label",
+          "label": "Beschriftung",
+          "model": "label"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Legends (mirrored)",
+  "group": "Content",
+  "model": {
+    "title": "Die Heimat lokaler Legenden",
+    "text": "<p>Taekwondo Bern ist mehr als nur ein Kampfsportverein – wir sind eine Familie.</p>",
+    "image": "/content/bayviewthemevue3/assets/poomsae-kid.jpg",
+    "imagealt": "Poomsae Grundstellung",
+    "swap": "true"
+  }
+}

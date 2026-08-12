@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Register">
+  <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
+    <sample jcr:primaryType="nt:unstructured" title="Register" group="Content">
+      <jcr:content jcr:primaryType="nt:unstructured" title="Anmelden" text="&lt;p>Trainiere mit uns – ein Training, ein Kick und eine grosse Portion Selbstvertrauen nach dem anderen.&lt;/p>" namelabel="Vollständiger Name" agelabel="Alter" emaillabel="E-Mail Adresse" leaguelabel="Training wählen" levellabel="Niveau" buttontext="Jetzt anmelden" note="Deine Daten werden vertraulich behandelt. Niemals Passwörter senden." action="mailto:info@taekwondobern.ch"/>
+    </sample>
+    <sample-mirrored jcr:primaryType="nt:unstructured" title="Register (mirrored)" group="Content">
+      <jcr:content jcr:primaryType="nt:unstructured" title="Anmelden" text="&lt;p>Trainiere mit uns – ein Training, ein Kick und eine grosse Portion Selbstvertrauen nach dem anderen.&lt;/p>" namelabel="Vollständiger Name" agelabel="Alter" emaillabel="E-Mail Adresse" leaguelabel="Training wählen" levellabel="Niveau" buttontext="Jetzt anmelden" note="Deine Daten werden vertraulich behandelt. Niemals Passwörter senden." action="mailto:info@taekwondobern.ch" swap="true"/>
+    </sample-mirrored>
+  </jcr:content>
+</jcr:root>

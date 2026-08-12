@@ -1,0 +1,204 @@
+{
+  "definitions": {
+    "title": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Title",
+      "x-form-type": "text"
+    },
+    "richtext": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Text",
+      "x-form-type": "texteditor"
+    },
+    "image": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Image",
+      "x-form-type": "pathbrowser",
+      "x-form-browserRoot": "/content/bayviewthemevue3/assets"
+    },
+    "imagealt": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Image Alt Text",
+      "x-form-type": "text"
+    },
+    "link": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Link",
+      "x-form-type": "pathbrowser",
+      "x-form-browserRoot": "/content"
+    },
+    "buttontext": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Button Label",
+      "x-form-type": "text"
+    },
+    "swap": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Swap Sides (mirror the two columns)",
+      "x-form-type": "materialswitch"
+    },
+    "background": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Background",
+      "x-form-type": "materialselect",
+      "x-default": "white",
+      "properties": {
+        "white": {
+          "x-form-name": "White",
+          "x-form-value": "white"
+        },
+        "cream": {
+          "x-form-name": "Cream",
+          "x-form-value": "cream"
+        },
+        "teal": {
+          "x-form-name": "Teal",
+          "x-form-value": "teal"
+        }
+      }
+    },
+    "dateevents": {
+      "type": "object",
+      "x-source": "inject",
+      "x-form-label": "Rows",
+      "x-form-type": "collection",
+      "x-form-fieldLabel": [
+        "date"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Date",
+          "x-form-type": "text"
+        },
+        "event": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Event",
+          "x-form-type": "text"
+        }
+      }
+    },
+    "namelinks": {
+      "type": "object",
+      "x-source": "inject",
+      "x-form-label": "Tiles",
+      "x-form-type": "collection",
+      "x-form-fieldLabel": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Name",
+          "x-form-type": "text"
+        },
+        "link": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Link",
+          "x-form-type": "text"
+        }
+      }
+    },
+    "formfields": {
+      "type": "object",
+      "x-source": "inject",
+      "x-form-label": "Form Fields",
+      "x-form-type": "collection",
+      "x-form-fieldLabel": [
+        "label"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Kind (input, email, textarea, options)",
+          "x-form-type": "text"
+        },
+        "label": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Label",
+          "x-form-type": "text"
+        },
+        "options": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Options (comma separated, for kind=options)",
+          "x-form-type": "text"
+        }
+      }
+    },
+    "visibility": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Visibility",
+      "x-form-type": "materialselect",
+      "x-default": "all",
+      "properties": {
+        "all": {
+          "x-form-name": "Immer sichtbar",
+          "x-form-value": "all"
+        },
+        "desktop": {
+          "x-form-name": "Nur Desktop (ab 821px)",
+          "x-form-value": "desktop"
+        },
+        "mobile": {
+          "x-form-name": "Nur Mobile (bis 820px)",
+          "x-form-value": "mobile"
+        }
+      }
+    },
+    "focusx": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Focus Point X (0 = links, 100 = rechts)",
+      "x-form-type": "materialrange",
+      "x-form-min": 0,
+      "x-form-max": 100,
+      "x-default": 50
+    },
+    "focusy": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Focus Point Y (0 = oben, 100 = unten)",
+      "x-form-type": "materialrange",
+      "x-form-min": 0,
+      "x-form-max": 100,
+      "x-default": 50
+    },
+    "zoom": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Zoom (100 = normal, bis 200%)",
+      "x-form-type": "materialrange",
+      "x-form-min": 100,
+      "x-form-max": 200,
+      "x-default": 100
+    },
+    "videourl": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Vimeo Video (URL oder ID) – nutzt das Bild als Vorschau",
+      "x-form-type": "text"
+    },
+    "videoautoplay": {
+      "type": "string",
+      "x-source": "inject",
+      "x-form-label": "Video automatisch abspielen (stumm, in Schleife)",
+      "x-form-type": "materialswitch"
+    }
+  }
+}

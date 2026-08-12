@@ -1,0 +1,40 @@
+{
+  "definitions": {
+    "Blkbutton": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "text": {
+          "$ref": "schemas/shared.json#/definitions/buttontext"
+        },
+        "link": {
+          "$ref": "schemas/shared.json#/definitions/link"
+        },
+        "style": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Style",
+          "x-form-type": "materialselect",
+          "x-default": "teal",
+          "properties": {
+            "teal": {
+              "x-form-name": "Teal pill",
+              "x-form-value": "teal"
+            },
+            "white": {
+              "x-form-name": "White pill (on teal)",
+              "x-form-value": "white"
+            },
+            "black": {
+              "x-form-name": "Black bar",
+              "x-form-value": "black"
+            }
+          }
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

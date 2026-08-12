@@ -1,0 +1,143 @@
+{
+  "definitions": {
+    "Register": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "title": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Heading",
+          "x-form-type": "text"
+        },
+        "text": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Text (bottom left)",
+          "x-form-type": "texteditor"
+        },
+        "namelabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Name Field Label",
+          "x-form-type": "text"
+        },
+        "agelabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Age Field Label",
+          "x-form-type": "text"
+        },
+        "emaillabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Email Field Label",
+          "x-form-type": "text"
+        },
+        "leaguelabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "League Group Label",
+          "x-form-type": "text"
+        },
+        "leagues": {
+          "type": "object",
+          "x-source": "inject",
+          "x-form-label": "League Options",
+          "x-form-type": "collection",
+          "x-form-fieldLabel": [
+            "text"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Option",
+              "x-form-type": "text"
+            },
+            "value": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Value (optional, defaults to the option text)",
+              "x-form-type": "text"
+            }
+          }
+        },
+        "levellabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Level Group Label",
+          "x-form-type": "text"
+        },
+        "levels": {
+          "type": "object",
+          "x-source": "inject",
+          "x-form-label": "Level Options",
+          "x-form-type": "collection",
+          "x-form-fieldLabel": [
+            "text"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Option",
+              "x-form-type": "text"
+            },
+            "value": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Value (optional, defaults to the option text)",
+              "x-form-type": "text"
+            }
+          }
+        },
+        "buttontext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Button Label",
+          "x-form-type": "text"
+        },
+        "sendingtext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Button Label While Sending",
+          "x-form-type": "text"
+        },
+        "successtext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Confirmation Message",
+          "x-form-type": "text"
+        },
+        "errortext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Error Message",
+          "x-form-type": "text"
+        },
+        "note": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Note under the button",
+          "x-form-type": "text"
+        },
+        "action": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Form Action (mailto: or endpoint URL)",
+          "x-form-type": "text"
+        },
+        "swap": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Swap Sides (mirror the two columns)",
+          "x-form-type": "materialswitch"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

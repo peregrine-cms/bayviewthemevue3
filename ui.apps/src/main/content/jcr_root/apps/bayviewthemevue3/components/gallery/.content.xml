@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Gallery">
+  <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
+    <sample jcr:primaryType="nt:unstructured" title="Gallery" group="Content">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>Momente, Medaillen und viele Lachen.&lt;br>Das ist mehr als Sport – das ist eine Community.&lt;/p>"/>
+    </sample>
+    <sample-mirrored jcr:primaryType="nt:unstructured" title="Gallery (mirrored)" group="Content">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>Momente, Medaillen und viele Lachen.&lt;br>Das ist mehr als Sport – das ist eine Community.&lt;/p>" swap="true"/>
+    </sample-mirrored>
+  </jcr:content>
+</jcr:root>

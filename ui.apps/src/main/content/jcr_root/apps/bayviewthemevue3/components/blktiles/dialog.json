@@ -1,0 +1,58 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            [
+              "name"
+            ],
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "name",
+              "label": "Name",
+              "model": "name"
+            },
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "link",
+              "label": "Link",
+              "model": "link"
+            }
+          ],
+          "placeholder": "items",
+          "label": "Tiles",
+          "model": "items"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

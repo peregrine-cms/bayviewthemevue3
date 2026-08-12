@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="per:Page">
+
+    <jcr:content
+        jcr:primaryType="per:PageContent"
+        jcr:title="Bayview Theme Templates"
+        sling:resourceType="bayviewthemevue3/components/page"
+        siteCSS="[/etc/felibs/bayviewthemevue3.css]"/>
+
+    <blank/>
+    <standard/>
+
+</jcr:root>

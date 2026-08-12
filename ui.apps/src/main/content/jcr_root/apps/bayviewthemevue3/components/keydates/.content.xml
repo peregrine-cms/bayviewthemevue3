@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Key Dates">
+  <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
+    <sample jcr:primaryType="nt:unstructured" title="Key Dates" group="Content">
+      <jcr:content jcr:primaryType="nt:unstructured" title="Termine" datelabel="Datum" eventlabel="Event" image="/content/bayviewthemevue3/assets/sparring.jpg" imagealt="Kyorugi Sparring"/>
+    </sample>
+    <sample-mirrored jcr:primaryType="nt:unstructured" title="Key Dates (mirrored)" group="Content">
+      <jcr:content jcr:primaryType="nt:unstructured" title="Termine" datelabel="Datum" eventlabel="Event" image="/content/bayviewthemevue3/assets/sparring.jpg" imagealt="Kyorugi Sparring" swap="true"/>
+    </sample-mirrored>
+  </jcr:content>
+</jcr:root>

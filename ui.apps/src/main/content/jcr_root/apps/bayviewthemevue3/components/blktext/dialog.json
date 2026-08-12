@@ -1,0 +1,72 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "texteditor",
+          "rows": 10,
+          "placeholder": "text",
+          "label": "Text",
+          "model": "text"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Left",
+              "value": "left"
+            },
+            {
+              "name": "Right",
+              "value": "right"
+            },
+            {
+              "name": "Center",
+              "value": "center"
+            }
+          ],
+          "placeholder": "align",
+          "label": "Placement",
+          "model": "align"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Normal (0.95rem)",
+              "value": "normal"
+            },
+            {
+              "name": "Large (1.05rem)",
+              "value": "large"
+            }
+          ],
+          "placeholder": "size",
+          "label": "Text Size",
+          "model": "size"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

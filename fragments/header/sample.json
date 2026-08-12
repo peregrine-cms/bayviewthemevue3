@@ -1,0 +1,11 @@
+{
+  "title": "Header (Lockup)",
+  "group": "Structure",
+  "model": {
+    "brand": "TAEKWONDO BERN",
+    "brandlink": "/content/bayviewthemevue3/pages/index",
+    "logo": "/content/bayviewthemevue3/assets/logo-mark.png",
+    "logoalt": "Taekwondo Bern – White Tiger",
+    "variant": "default"
+  }
+}

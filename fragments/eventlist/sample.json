@@ -1,0 +1,9 @@
+{
+  "title": "Event List (Termine)",
+  "group": "Content",
+  "model": {
+    "title": "Termine",
+    "daysahead": "120",
+    "showlocation": "true"
+  }
+}

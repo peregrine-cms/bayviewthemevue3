@@ -1,0 +1,45 @@
+{
+  "definitions": {
+    "Band": {
+      "type": "object",
+      "x-type": "container",
+      "properties": {
+        "background": {
+          "$ref": "schemas/shared.json#/definitions/background"
+        },
+        "contained": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Constrain content width (page container)",
+          "x-form-type": "materialswitch"
+        },
+        "flush": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Flush (no vertical padding)",
+          "x-form-type": "materialswitch"
+        },
+        "padding": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Vertical Padding",
+          "x-form-type": "materialselect",
+          "x-default": "compact",
+          "properties": {
+            "compact": {
+              "x-form-name": "Compact",
+              "x-form-value": "compact"
+            },
+            "roomy": {
+              "x-form-name": "Roomy (section)",
+              "x-form-value": "roomy"
+            }
+          }
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

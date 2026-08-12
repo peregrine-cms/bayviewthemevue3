@@ -1,0 +1,188 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "title",
+          "label": "Heading",
+          "model": "title"
+        },
+        {
+          "type": "texteditor",
+          "rows": 10,
+          "placeholder": "text",
+          "label": "Text (bottom left)",
+          "model": "text"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "namelabel",
+          "label": "Name Field Label",
+          "model": "namelabel"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "agelabel",
+          "label": "Age Field Label",
+          "model": "agelabel"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "emaillabel",
+          "label": "Email Field Label",
+          "model": "emaillabel"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "leaguelabel",
+          "label": "League Group Label",
+          "model": "leaguelabel"
+        },
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            [
+              "text"
+            ],
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "text",
+              "label": "Option",
+              "model": "text"
+            },
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "value",
+              "label": "Value (optional, defaults to the option text)",
+              "model": "value"
+            }
+          ],
+          "placeholder": "leagues",
+          "label": "League Options",
+          "model": "leagues"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "levellabel",
+          "label": "Level Group Label",
+          "model": "levellabel"
+        },
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            [
+              "text"
+            ],
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "text",
+              "label": "Option",
+              "model": "text"
+            },
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "value",
+              "label": "Value (optional, defaults to the option text)",
+              "model": "value"
+            }
+          ],
+          "placeholder": "levels",
+          "label": "Level Options",
+          "model": "levels"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "buttontext",
+          "label": "Button Label",
+          "model": "buttontext"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "sendingtext",
+          "label": "Button Label While Sending",
+          "model": "sendingtext"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "successtext",
+          "label": "Confirmation Message",
+          "model": "successtext"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "errortext",
+          "label": "Error Message",
+          "model": "errortext"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "note",
+          "label": "Note under the button",
+          "model": "note"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "action",
+          "label": "Form Action (mailto: or endpoint URL)",
+          "model": "action"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "swap",
+          "label": "Swap Sides (mirror the two columns)",
+          "model": "swap"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

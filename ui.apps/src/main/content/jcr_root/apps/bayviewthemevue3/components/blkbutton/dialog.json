@@ -1,0 +1,63 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "text",
+          "label": "Button Label",
+          "model": "text"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content",
+          "placeholder": "link",
+          "label": "Link",
+          "model": "link"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Teal pill",
+              "value": "teal"
+            },
+            {
+              "name": "White pill (on teal)",
+              "value": "white"
+            },
+            {
+              "name": "Black bar",
+              "value": "black"
+            }
+          ],
+          "placeholder": "style",
+          "label": "Style",
+          "model": "style"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "definitions": {
+    "Form": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Form Schema (JSON Schema file)",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content"
+        },
+        "uischema": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "UI Schema (JSON Forms UI schema file)",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content"
+        },
+        "endpointurl": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit endpoint URL (e.g. https://formspree.io/f/<id>)",
+          "x-form-type": "text"
+        },
+        "submitfunction": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Custom submit function (window.* path, optional)",
+          "x-form-type": "text"
+        },
+        "submittext": {
+          "$ref": "schemas/shared.json#/definitions/buttontext"
+        },
+        "successmessage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Success Message (shown inline)",
+          "x-form-type": "text"
+        },
+        "successpage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Success Page (optional, overrides message)",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content"
+        },
+        "failmessage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Failure Message",
+          "x-form-type": "text"
+        },
+        "style": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Style",
+          "x-form-type": "materialselect",
+          "x-default": "light",
+          "properties": {
+            "light": {
+              "x-form-name": "Light (outlined box, ink on white)",
+              "x-form-value": "light"
+            },
+            "teal": {
+              "x-form-name": "On teal (white outlined box)",
+              "x-form-value": "teal"
+            }
+          }
+        },
+        "submitstyle": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit Button",
+          "x-form-type": "materialselect",
+          "x-default": "black",
+          "properties": {
+            "black": {
+              "x-form-name": "Black bar",
+              "x-form-value": "black"
+            },
+            "white": {
+              "x-form-name": "White pill",
+              "x-form-value": "white"
+            }
+          }
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

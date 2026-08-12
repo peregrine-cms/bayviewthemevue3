@@ -1,0 +1,9 @@
+{
+  "title": "Image",
+  "group": "Blocks",
+  "model": {
+    "image": "/content/bayviewthemevue3/assets/flying-kick.jpg",
+    "imagealt": "Freestyle Kick",
+    "height": "medium"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "White",
+              "value": "white"
+            },
+            {
+              "name": "Cream",
+              "value": "cream"
+            },
+            {
+              "name": "Teal",
+              "value": "teal"
+            }
+          ],
+          "placeholder": "background",
+          "label": "Background",
+          "model": "background"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "title",
+          "label": "Title",
+          "model": "title"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

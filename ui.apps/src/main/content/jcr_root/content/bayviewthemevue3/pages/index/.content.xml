@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
+    jcr:primaryType="per:Page">
+    <!-- Body only. Chrome (header/footer) comes from the standard template
+         and merges in at render. -->
+    <jcr:content
+        jcr:primaryType="per:PageContent"
+        jcr:title="Bayview Theme"
+        sling:resourceType="bayviewthemevue3/components/page"
+        template="/content/bayviewthemevue3/templates/standard"
+        templatePath="/content/bayviewthemevue3/templates/standard">
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="pagerendervue/structure/container">
+            <hero
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bayviewthemevue3/components/herosplit"
+                image="/content/bayviewthemevue3/assets/flying-kick.jpg"
+                imagealt="Freestyle Kick im Dojang"
+                logotext="TAE KWON DO BERN"
+                kicker="Lokale Verbundenheit und starke Taekwondo Förderung für alle Altersstufen"
+                title="Willkommen im Club"
+                ctatext="Schnuppertraining"
+                ctalink="/content/bayviewthemevue3/pages/index"/>
+            <legends
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bayviewthemevue3/components/legends"
+                title="Die Heimat lokaler Legenden"
+                text="&lt;p&gt;Taekwondo Bern ist mehr als nur ein Kampfsportverein – wir sind eine Familie. Von Tigern, die ihre ersten Schritte auf der Matte machen, bis zu Athlet*innen, die noch ein Ziel mehr jagen.&lt;/p&gt;"
+                image="/content/bayviewthemevue3/assets/poomsae-kid.jpg"
+                imagealt="Poomsae Grundstellung"/>
+            <sponsors
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bayviewthemevue3/components/sponsorband"
+                title="Danke an unsere Unterstützer"
+                image="/content/bayviewthemevue3/assets/dojang-action.jpg"
+                imagealt="Training im Dojang">
+                <sponsors jcr:primaryType="nt:unstructured">
+                    <i0 jcr:primaryType="nt:unstructured" name="Sportfonds Kanton Bern" link="https://www.fobe.sid.be.ch/de/start/sportfonds.html"/>
+                    <i1 jcr:primaryType="nt:unstructured" name="Migros Support my Camp" link="https://supportmycamp.migros.ch/de/vereine/taekwondo-bern/"/>
+                    <i2 jcr:primaryType="nt:unstructured" name="Power Arena"/>
+                    <i3 jcr:primaryType="nt:unstructured" name="Swiss Taekwondo"/>
+                </sponsors>
+            </sponsors>
+            <register
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bayviewthemevue3/components/register"
+                title="Anmelden"
+                text="&lt;p&gt;Trainiere mit uns – ein Training, ein Kick und eine grosse Portion Selbstvertrauen nach dem anderen.&lt;/p&gt;"
+                namelabel="Vollständiger Name"
+                doblabel="Geburtsdatum"
+                emaillabel="E-Mail Adresse"
+                leaguelabel="Training wählen"
+                levellabel="Niveau"
+                buttontext="Jetzt anmelden"
+                note="Deine Daten werden vertraulich behandelt. Niemals Passwörter senden."
+                action="mailto:info@taekwondobern.ch">
+                <leagues jcr:primaryType="nt:unstructured">
+                    <i0 jcr:primaryType="nt:unstructured" text="Tiger (4+)"/>
+                    <i1 jcr:primaryType="nt:unstructured" text="Familie"/>
+                    <i2 jcr:primaryType="nt:unstructured" text="Jugend"/>
+                    <i3 jcr:primaryType="nt:unstructured" text="Erwachsene"/>
+                </leagues>
+                <levels jcr:primaryType="nt:unstructured">
+                    <i0 jcr:primaryType="nt:unstructured" text="Fortgeschritten"/>
+                    <i1 jcr:primaryType="nt:unstructured" text="Mittelstufe"/>
+                    <i2 jcr:primaryType="nt:unstructured" text="Anfänger*in"/>
+                </levels>
+            </register>
+            <leagues
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bayviewthemevue3/components/leagues"
+                title="Unsere Trainings">
+                <items jcr:primaryType="nt:unstructured">
+                    <i0 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/team-kids.jpg" imagealt="Tiger Training" title="Tiger Training" text="Unsere Tiger (4–7 Jahre) trainieren in kleineren Gruppen mit viel Spiel und Spass."/>
+                    <i1 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/dojang-action.jpg" imagealt="Familien Training" title="Familien Training" text="Eltern trainieren mit ihren Kindern im selben Team – für alle Altersstufen."/>
+                    <i2 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/team-adults.jpg" imagealt="Erwachsenen Training" title="Erwachsenen Training" text="Ab 16 Jahren trainieren alle gemeinsam – vom weissen bis zum schwarzen Gürtel."/>
+                </items>
+            </leagues>
+            <keydates
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bayviewthemevue3/components/keydates"
+                title="Termine"
+                datelabel="Datum"
+                eventlabel="Event"
+                image="/content/bayviewthemevue3/assets/sparring.jpg"
+                imagealt="Kyorugi Sparring">
+                <items jcr:primaryType="nt:unstructured">
+                    <i0 jcr:primaryType="nt:unstructured" date="22. Februar" event="Swiss Taekwondo Coach Education B"/>
+                    <i1 jcr:primaryType="nt:unstructured" date="28. Februar" event="Training Nationalmannschaft"/>
+                    <i2 jcr:primaryType="nt:unstructured" date="1. März" event="Test Match Day (Daedo Gen 3)"/>
+                    <i3 jcr:primaryType="nt:unstructured" date="30.–31. Mai" event="Winterthur Trophy (Kyorugi)"/>
+                    <i4 jcr:primaryType="nt:unstructured" date="20. Juni" event="Dan Promotion, Wattwil"/>
+                    <i5 jcr:primaryType="nt:unstructured" date="Jeden Freitag" event="Fight Night in der Power Arena"/>
+                </items>
+            </keydates>
+            <gallery
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bayviewthemevue3/components/gallery"
+                text="&lt;p&gt;Momente, Medaillen und viele Lachen.&lt;br&gt;Das ist mehr als Sport – das ist eine Community.&lt;/p&gt;">
+                <images jcr:primaryType="nt:unstructured">
+                    <i0 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/team-kids.jpg" imagealt="Unsere Tiger"/>
+                    <i1 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/sparring2.jpg" imagealt="Sparring"/>
+                    <i2 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/presidents.jpg" imagealt="Co-Präsidentinnen"/>
+                    <i3 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/poomsae-comp.jpg" imagealt="Poomsae Wettkampf"/>
+                    <i4 jcr:primaryType="nt:unstructured" image="/content/bayviewthemevue3/assets/photoshoot.jpg" imagealt="Fototermin"/>
+                </images>
+            </gallery>
+            <contact
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bayviewthemevue3/components/contact"
+                title="Kontakt"
+                image="/content/bayviewthemevue3/assets/poomsae-kid.jpg"
+                imagealt="Poomsae Training"
+                namelabel="Name"
+                emaillabel="E-Mail Adresse"
+                messagelabel="Deine Nachricht"
+                buttontext="Senden"
+                note="Kostenloses Schnuppertraining – kontaktiere uns!"
+                action="mailto:info@taekwondobern.ch"/>
+        </main>
+    </jcr:content>
+</jcr:root>

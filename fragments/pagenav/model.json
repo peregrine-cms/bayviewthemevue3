@@ -1,0 +1,18 @@
+{
+  "definitions": {
+    "Pagenav": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "uplabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Beschriftung des Übersicht-Links",
+          "x-form-type": "text"
+        },
+        "uplink": { "$ref": "schemas/shared.json#/definitions/link" },
+        "visibility": { "$ref": "schemas/shared.json#/definitions/visibility" }
+      }
+    }
+  }
+}

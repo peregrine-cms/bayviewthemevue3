@@ -1,0 +1,29 @@
+{
+  "name": "bayviewthemevue3-ui.apps",
+  "version": "1.0.0",
+  "description": "Bayview Theme (Vue 3) for Peregrine CMS - Vue 3 components",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/buildvue3.js bayviewthemevue3",
+    "build:jsonforms": "node scripts/build-jsonforms.js"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/compiler-sfc": "^3.5.13",
+    "rollup": "^4.30.1",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "esbuild": "^0.24.2",
+    "@jsonforms/core": "^3.8.0",
+    "@jsonforms/vue": "^3.8.0",
+    "@jsonforms/vue-vanilla": "^3.8.0"
+  }
+}

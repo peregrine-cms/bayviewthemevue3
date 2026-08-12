@@ -1,0 +1,116 @@
+{
+  "fields": [
+    {
+      "type": "input",
+      "inputType": "text",
+      "model": "brand",
+      "label": "Brand",
+      "placeholder": "brand name"
+    },
+    {
+      "type": "pathbrowser",
+      "browserRoot": "/content/pagerendervue/assets",
+      "placeholder": "icon location",
+      "label": "Site Icons Location",
+      "model": "siteIcons"
+    },
+    {
+      "type": "collection",
+      "title": "Prefetch Hostnames",
+      "model": "prefetchDNS",
+      "multifield": false,
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "Domain Name to resolve",
+          "model": "prefetchDNS"
+        }
+      ],
+      "items": []
+    },
+    {
+      "type": "collection",
+      "title": "Site JS Files",
+      "model": "siteJS",
+      "multifield": false,
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "path/to/file.js",
+          "model": "siteJS"
+        }
+      ],
+      "items": []
+    },
+    {
+      "type": "collection",
+      "title": "Site CSS Files",
+      "model": "siteCSS",
+      "multifield": false,
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "path/to/file.css",
+          "model": "siteCSS"
+        }
+      ],
+      "items": []
+    },
+    {
+      "type": "collection",
+      "title": "Public Domain Names",
+      "model": "domains",
+      "multifield": false,
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "http://public-domain.com",
+          "model": "domains"
+        }
+      ],
+      "items": []
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "model": "newsdate",
+      "label": "News Date (yyyy-mm-dd, for news articles)",
+      "placeholder": "2026-07-14"
+    },
+    {
+      "type": "texteditor",
+      "rows": 4,
+      "model": "teaser",
+      "label": "News Teaser (for news articles)",
+      "placeholder": "short teaser shown in news lists"
+    },
+    {
+      "type": "pathbrowser",
+      "browserRoot": "/content/bayviewthemevue3/assets",
+      "model": "teaserimage",
+      "label": "News Teaser Image (for news articles)",
+      "placeholder": "teaser image"
+    },
+    {
+      "type": "materialswitch",
+      "model": "hideInNav",
+      "label": "Hide this page from navigation"
+    },
+    {
+      "type": "materialswitch",
+      "model": "navHideChildren",
+      "label": "Hide child pages from navigation (treat as leaf)"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "model": "navTitle",
+      "label": "Navigation Title (overrides page title in menu)",
+      "placeholder": "nav label"
+    }
+  ]
+}

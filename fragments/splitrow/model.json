@@ -1,0 +1,174 @@
+{
+  "definitions": {
+    "Splitrow": {
+      "type": "object",
+      "x-type": "container",
+      "properties": {
+        "ratio": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Column Ratio (left-right)",
+          "x-form-type": "materialselect",
+          "x-default": "50-50",
+          "properties": {
+            "50-50": {
+              "x-form-name": "50 / 50",
+              "x-form-value": "50-50"
+            },
+            "58-42": {
+              "x-form-name": "58 / 42",
+              "x-form-value": "58-42"
+            },
+            "42-58": {
+              "x-form-name": "42 / 58",
+              "x-form-value": "42-58"
+            },
+            "62-38": {
+              "x-form-name": "62 / 38",
+              "x-form-value": "62-38"
+            },
+            "38-62": {
+              "x-form-name": "38 / 62",
+              "x-form-value": "38-62"
+            }
+          }
+        },
+        "leftbg": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Left Background",
+          "x-form-type": "materialselect",
+          "x-default": "white",
+          "properties": {
+            "white": {
+              "x-form-name": "White",
+              "x-form-value": "white"
+            },
+            "cream": {
+              "x-form-name": "Cream",
+              "x-form-value": "cream"
+            },
+            "teal": {
+              "x-form-name": "Teal",
+              "x-form-value": "teal"
+            },
+            "none": {
+              "x-form-name": "None (transparent)",
+              "x-form-value": "none"
+            }
+          }
+        },
+        "rightbg": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Right Background",
+          "x-form-type": "materialselect",
+          "x-default": "white",
+          "properties": {
+            "white": {
+              "x-form-name": "White",
+              "x-form-value": "white"
+            },
+            "cream": {
+              "x-form-name": "Cream",
+              "x-form-value": "cream"
+            },
+            "teal": {
+              "x-form-name": "Teal",
+              "x-form-value": "teal"
+            },
+            "none": {
+              "x-form-name": "None (transparent)",
+              "x-form-value": "none"
+            }
+          }
+        },
+        "swap": {
+          "$ref": "schemas/shared.json#/definitions/swap"
+        },
+        "minheight": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Minimum Height",
+          "x-form-type": "materialselect",
+          "x-default": "auto",
+          "properties": {
+            "auto": {
+              "x-form-name": "Auto",
+              "x-form-value": "auto"
+            },
+            "medium": {
+              "x-form-name": "Medium (420px)",
+              "x-form-value": "medium"
+            },
+            "tall": {
+              "x-form-name": "Tall (540px)",
+              "x-form-value": "tall"
+            },
+            "large": {
+              "x-form-name": "Large (520px)",
+              "x-form-value": "large"
+            }
+          }
+        },
+        "leftflush": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Left column flush (no padding, media edge-to-edge)",
+          "x-form-type": "materialswitch"
+        },
+        "rightflush": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Right column flush (no padding, media edge-to-edge)",
+          "x-form-type": "materialswitch"
+        },
+        "valign": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Vertical Alignment",
+          "x-form-type": "materialselect",
+          "x-default": "center",
+          "properties": {
+            "center": {
+              "x-form-name": "Center",
+              "x-form-value": "center"
+            },
+            "top": {
+              "x-form-name": "Top",
+              "x-form-value": "top"
+            },
+            "spread": {
+              "x-form-name": "Spread (first top, last bottom)",
+              "x-form-value": "spread"
+            }
+          }
+        },
+        "gap": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Gap between columns",
+          "x-form-type": "materialselect",
+          "x-default": "none",
+          "properties": {
+            "none": {
+              "x-form-name": "None",
+              "x-form-value": "none"
+            },
+            "small": {
+              "x-form-name": "Small (14px)",
+              "x-form-value": "small"
+            },
+            "normal": {
+              "x-form-name": "Normal (24-48px)",
+              "x-form-value": "normal"
+            }
+          }
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

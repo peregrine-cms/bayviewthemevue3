@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Legends">
+  <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
+    <sample jcr:primaryType="nt:unstructured" title="Legends" group="Content">
+      <jcr:content jcr:primaryType="nt:unstructured" title="Die Heimat lokaler Legenden" text="&lt;p>Taekwondo Bern ist mehr als nur ein Kampfsportverein – wir sind eine Familie.&lt;/p>" image="/content/bayviewthemevue3/assets/poomsae-kid.jpg" imagealt="Poomsae Grundstellung"/>
+    </sample>
+    <sample-mirrored jcr:primaryType="nt:unstructured" title="Legends (mirrored)" group="Content">
+      <jcr:content jcr:primaryType="nt:unstructured" title="Die Heimat lokaler Legenden" text="&lt;p>Taekwondo Bern ist mehr als nur ein Kampfsportverein – wir sind eine Familie.&lt;/p>" image="/content/bayviewthemevue3/assets/poomsae-kid.jpg" imagealt="Poomsae Grundstellung" swap="true"/>
+    </sample-mirrored>
+  </jcr:content>
+</jcr:root>

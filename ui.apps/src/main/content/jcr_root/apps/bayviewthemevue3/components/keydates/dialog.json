@@ -1,0 +1,175 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "title",
+          "label": "Heading",
+          "model": "title"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "datelabel",
+          "label": "Date Column Label",
+          "model": "datelabel"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "eventlabel",
+          "label": "Event Column Label",
+          "model": "eventlabel"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/bayviewthemevue3/assets",
+          "placeholder": "image",
+          "label": "Image",
+          "model": "image"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "imagealt",
+          "label": "Image Alt Text",
+          "model": "imagealt"
+        },
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            [
+              "date"
+            ],
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "date",
+              "label": "Date",
+              "model": "date"
+            },
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "event",
+              "label": "Event",
+              "model": "event"
+            }
+          ],
+          "placeholder": "items",
+          "label": "Rows",
+          "model": "items"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "swap",
+          "label": "Swap Sides (mirror the two columns)",
+          "model": "swap"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "focusx",
+          "label": "Focus Point X (0 = links, 100 = rechts)",
+          "model": "focusx",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "type": "material-range",
+          "placeholder": "focusy",
+          "label": "Focus Point Y (0 = oben, 100 = unten)",
+          "model": "focusy",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "type": "material-range",
+          "placeholder": "zoom",
+          "label": "Zoom (100 = normal, bis 200%)",
+          "model": "zoom",
+          "min": 100,
+          "max": 200
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Manuelle Einträge",
+              "value": "manual"
+            },
+            {
+              "name": "Google Kalender (ganztägige Events)",
+              "value": "ical"
+            }
+          ],
+          "placeholder": "source",
+          "label": "Datenquelle",
+          "model": "source"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "daysahead",
+          "label": "Tage Vorschau (Kalender-Quelle)",
+          "model": "daysahead",
+          "min": 14,
+          "max": 365
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "maxitems",
+          "label": "Maximale Einträge (0 = alle)",
+          "model": "maxitems"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "videourl",
+          "label": "Vimeo Video (URL oder ID) – nutzt das Bild als Vorschau",
+          "model": "videourl"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "videoautoplay",
+          "label": "Video automatisch abspielen (stumm, in Schleife)",
+          "model": "videoautoplay"
+        }
+      ]
+    }
+  ]
+}

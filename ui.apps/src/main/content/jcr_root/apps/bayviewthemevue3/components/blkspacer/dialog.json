@@ -1,0 +1,53 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Tiny (14px)",
+              "value": "tiny"
+            },
+            {
+              "name": "Small (16px)",
+              "value": "small"
+            },
+            {
+              "name": "Medium (40px)",
+              "value": "medium"
+            },
+            {
+              "name": "Large (80px)",
+              "value": "large"
+            }
+          ],
+          "placeholder": "size",
+          "label": "Height",
+          "model": "size"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

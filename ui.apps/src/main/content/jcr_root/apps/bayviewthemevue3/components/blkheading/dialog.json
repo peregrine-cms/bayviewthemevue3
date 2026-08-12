@@ -1,0 +1,86 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "text",
+          "label": "Title",
+          "model": "text"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Display (hero)",
+              "value": "display"
+            },
+            {
+              "name": "Band (section)",
+              "value": "band"
+            },
+            {
+              "name": "Item (card)",
+              "value": "item"
+            }
+          ],
+          "placeholder": "size",
+          "label": "Size",
+          "model": "size"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "H1",
+              "value": "h1"
+            },
+            {
+              "name": "H2",
+              "value": "h2"
+            },
+            {
+              "name": "H3",
+              "value": "h3"
+            }
+          ],
+          "placeholder": "level",
+          "label": "Heading Level",
+          "model": "level"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "overlay",
+          "label": "Overlay (absolute top-left over the column media)",
+          "model": "overlay"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

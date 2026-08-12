@@ -1,0 +1,70 @@
+{
+  "definitions": {
+    "Sponsorband": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "title": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Heading",
+          "x-form-type": "text"
+        },
+        "image": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Wide Photo",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content/bayviewthemevue3/assets"
+        },
+        "imagealt": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Image Alt Text",
+          "x-form-type": "text"
+        },
+        "sponsors": {
+          "type": "object",
+          "x-source": "inject",
+          "x-form-label": "Sponsors",
+          "x-form-type": "collection",
+          "x-form-fieldLabel": [
+            "name"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Name",
+              "x-form-type": "text"
+            },
+            "link": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Link",
+              "x-form-type": "text"
+            }
+          }
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        },
+        "focusx": {
+          "$ref": "schemas/shared.json#/definitions/focusx"
+        },
+        "focusy": {
+          "$ref": "schemas/shared.json#/definitions/focusy"
+        },
+        "zoom": {
+          "$ref": "schemas/shared.json#/definitions/zoom"
+        },
+        "videourl": {
+          "$ref": "schemas/shared.json#/definitions/videourl"
+        },
+        "videoautoplay": {
+          "$ref": "schemas/shared.json#/definitions/videoautoplay"
+        }
+      }
+    }
+  }
+}

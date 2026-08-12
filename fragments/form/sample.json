@@ -1,0 +1,14 @@
+{
+  "title": "Form (JSON Forms)",
+  "group": "Blocks",
+  "model": {
+    "schema": "/content/bayviewthemevue3/objects/forms/contact/schema.json",
+    "uischema": "/content/bayviewthemevue3/objects/forms/contact/uischema.json",
+    "endpointurl": "https://formspree.io/f/YOUR_FORM_ID",
+    "submittext": "Senden",
+    "successmessage": "Danke! Wir melden uns bei Dir.",
+    "failmessage": "Senden fehlgeschlagen – bitte versuche es später noch einmal.",
+    "style": "light",
+    "submitstyle": "black"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "definitions": {
+    "Blkimage": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "image": {
+          "$ref": "schemas/shared.json#/definitions/image"
+        },
+        "imagealt": {
+          "$ref": "schemas/shared.json#/definitions/imagealt"
+        },
+        "height": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Height",
+          "x-form-type": "materialselect",
+          "x-default": "medium",
+          "properties": {
+            "auto": {
+              "x-form-name": "Auto (natural)",
+              "x-form-value": "auto"
+            },
+            "small": {
+              "x-form-name": "Small (220px cover)",
+              "x-form-value": "small"
+            },
+            "medium": {
+              "x-form-name": "Medium (340px cover)",
+              "x-form-value": "medium"
+            },
+            "large": {
+              "x-form-name": "Large (480px cover)",
+              "x-form-value": "large"
+            },
+            "fill": {
+              "x-form-name": "Fill parent",
+              "x-form-value": "fill"
+            },
+            "banner": {
+              "x-form-name": "Banner (420px cover)",
+              "x-form-value": "banner"
+            },
+            "tile": {
+              "x-form-name": "Tile (265px cover)",
+              "x-form-value": "tile"
+            }
+          }
+        },
+        "fullbleed": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Full bleed (break out of the container width)",
+          "x-form-type": "materialswitch"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        },
+        "focusx": {
+          "$ref": "schemas/shared.json#/definitions/focusx"
+        },
+        "focusy": {
+          "$ref": "schemas/shared.json#/definitions/focusy"
+        },
+        "zoom": {
+          "$ref": "schemas/shared.json#/definitions/zoom"
+        },
+        "videourl": {
+          "$ref": "schemas/shared.json#/definitions/videourl"
+        },
+        "videoautoplay": {
+          "$ref": "schemas/shared.json#/definitions/videoautoplay"
+        }
+      }
+    }
+  }
+}

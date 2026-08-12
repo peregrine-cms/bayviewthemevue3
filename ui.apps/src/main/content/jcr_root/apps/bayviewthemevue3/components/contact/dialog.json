@@ -1,0 +1,164 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "title",
+          "label": "Heading",
+          "model": "title"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/bayviewthemevue3/assets",
+          "placeholder": "image",
+          "label": "Side Photo",
+          "model": "image"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "imagealt",
+          "label": "Image Alt Text",
+          "model": "imagealt"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "namelabel",
+          "label": "Name Field Label",
+          "model": "namelabel"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "emaillabel",
+          "label": "Email Field Label",
+          "model": "emaillabel"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "messagelabel",
+          "label": "Message Field Label",
+          "model": "messagelabel"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "buttontext",
+          "label": "Button Label",
+          "model": "buttontext"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "sendingtext",
+          "label": "Button Label While Sending",
+          "model": "sendingtext"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "successtext",
+          "label": "Confirmation Message",
+          "model": "successtext"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "errortext",
+          "label": "Error Message",
+          "model": "errortext"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "note",
+          "label": "Note under the button",
+          "model": "note"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "action",
+          "label": "Form Action (mailto: or endpoint URL)",
+          "model": "action"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "swap",
+          "label": "Swap Sides (mirror the two columns)",
+          "model": "swap"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "focusx",
+          "label": "Focus Point X (0 = links, 100 = rechts)",
+          "model": "focusx",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "type": "material-range",
+          "placeholder": "focusy",
+          "label": "Focus Point Y (0 = oben, 100 = unten)",
+          "model": "focusy",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "type": "material-range",
+          "placeholder": "zoom",
+          "label": "Zoom (100 = normal, bis 200%)",
+          "model": "zoom",
+          "min": 100,
+          "max": 200
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "videourl",
+          "label": "Vimeo Video (URL oder ID) – nutzt das Bild als Vorschau",
+          "model": "videourl"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "videoautoplay",
+          "label": "Video automatisch abspielen (stumm, in Schleife)",
+          "model": "videoautoplay"
+        }
+      ]
+    }
+  ]
+}

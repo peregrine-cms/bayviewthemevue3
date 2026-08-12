@@ -1,0 +1,43 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "uplabel",
+          "label": "Beschriftung des Übersicht-Links",
+          "model": "uplabel"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content",
+          "placeholder": "uplink",
+          "label": "Link",
+          "model": "uplink"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

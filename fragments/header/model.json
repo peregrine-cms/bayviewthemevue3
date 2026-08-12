@@ -1,0 +1,113 @@
+{
+  "definitions": {
+    "Header": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "variant": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Header Style",
+          "x-form-type": "materialselect",
+          "x-default": "default",
+          "properties": {
+            "default": {
+              "x-form-name": "Lockup (mark + wordmark)",
+              "x-form-value": "default"
+            },
+            "sticky": {
+              "x-form-name": "Sticky (pins to top on scroll)",
+              "x-form-value": "sticky"
+            },
+            "badge": {
+              "x-form-name": "Badge (crest overhangs the content)",
+              "x-form-value": "badge"
+            },
+            "centered": {
+              "x-form-name": "Centered (crest above nav)",
+              "x-form-value": "centered"
+            }
+          }
+        },
+        "logo": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Logo Image (top left, shown next to the brand text)",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content/bayviewthemevue3/assets"
+        },
+        "logoalt": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Logo Alt Text",
+          "x-form-type": "text"
+        },
+        "brand": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Brand Wordmark",
+          "x-form-type": "text"
+        },
+        "brandlink": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Brand Link",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content"
+        },
+        "navitems": {
+          "type": "object",
+          "x-source": "inject",
+          "x-form-label": "Navigation Items",
+          "x-form-type": "collection",
+          "x-form-fieldLabel": [
+            "text"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Label",
+              "x-form-type": "text"
+            },
+            "link": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Link",
+              "x-form-type": "pathbrowser",
+              "x-form-browserRoot": "/content"
+            }
+          }
+        },
+        "internlink": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Internal Area Link (blank = hide)",
+          "x-form-type": "pathbrowser",
+          "browserRoot": "/content"
+        },
+        "internlabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Internal Area Label (logged in)",
+          "x-form-type": "text"
+        },
+        "loginlabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Internal Area Label (logged out)",
+          "x-form-type": "text"
+        },
+        "shrink": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Shrink logo on scroll (sticky and badge styles)",
+          "x-form-type": "materialswitch"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

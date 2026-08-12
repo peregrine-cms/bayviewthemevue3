@@ -1,0 +1,78 @@
+{
+  "definitions": {
+    "Herosplit": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "image": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Hero Image (left)",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content/bayviewthemevue3/assets"
+        },
+        "imagealt": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Image Alt Text",
+          "x-form-type": "text"
+        },
+        "logotext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Logo Box Text (words stack per line)",
+          "x-form-type": "text"
+        },
+        "kicker": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Kicker (small text, top right)",
+          "x-form-type": "text"
+        },
+        "title": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Headline",
+          "x-form-type": "text"
+        },
+        "ctatext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Button Label",
+          "x-form-type": "text"
+        },
+        "ctalink": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Button Link",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content"
+        },
+        "swap": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Swap Sides (mirror the two columns)",
+          "x-form-type": "materialswitch"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        },
+        "focusx": {
+          "$ref": "schemas/shared.json#/definitions/focusx"
+        },
+        "focusy": {
+          "$ref": "schemas/shared.json#/definitions/focusy"
+        },
+        "zoom": {
+          "$ref": "schemas/shared.json#/definitions/zoom"
+        },
+        "videourl": {
+          "$ref": "schemas/shared.json#/definitions/videourl"
+        },
+        "videoautoplay": {
+          "$ref": "schemas/shared.json#/definitions/videoautoplay"
+        }
+      }
+    }
+  }
+}

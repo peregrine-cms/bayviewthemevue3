@@ -1,0 +1,64 @@
+{
+  "definitions": {
+    "Blkheading": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "text": {
+          "$ref": "schemas/shared.json#/definitions/title"
+        },
+        "size": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Size",
+          "x-form-type": "materialselect",
+          "x-default": "band",
+          "properties": {
+            "display": {
+              "x-form-name": "Display (hero)",
+              "x-form-value": "display"
+            },
+            "band": {
+              "x-form-name": "Band (section)",
+              "x-form-value": "band"
+            },
+            "item": {
+              "x-form-name": "Item (card)",
+              "x-form-value": "item"
+            }
+          }
+        },
+        "level": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Heading Level",
+          "x-form-type": "materialselect",
+          "x-default": "h2",
+          "properties": {
+            "h1": {
+              "x-form-name": "H1",
+              "x-form-value": "h1"
+            },
+            "h2": {
+              "x-form-name": "H2",
+              "x-form-value": "h2"
+            },
+            "h3": {
+              "x-form-name": "H3",
+              "x-form-value": "h3"
+            }
+          }
+        },
+        "overlay": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Overlay (absolute top-left over the column media)",
+          "x-form-type": "materialswitch"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

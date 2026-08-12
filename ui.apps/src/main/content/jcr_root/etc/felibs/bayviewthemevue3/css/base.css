@@ -1,0 +1,229 @@
+/*
+ * Bayview Theme - Base Styles
+ * Global resets and shared primitives. Component-specific rules live in the
+ * scoped <style> blocks of each template.vue.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bay-white);
+  color: var(--bay-ink);
+  font-family: var(--bay-font-body);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--bay-font-heading);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.04;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+/* Shared layout container */
+.bay-container {
+  max-width: var(--bay-content-max);
+  margin: 0 auto;
+  padding-left: var(--bay-content-padding);
+  padding-right: var(--bay-content-padding);
+}
+
+/* Uppercase display heading */
+.bay-display {
+  font-size: var(--bay-display);
+}
+
+/* Word-breaking, NARROW SCREENS ONLY.
+   Long unbreakable tokens are what actually pin a layout wider than the
+   viewport: e-mail addresses (info@taekwondobern.ch is ~300px at a scaled-up
+   root font), URLs, German compounds, and the uppercase display headings.
+   Pairs with the minmax(0, 1fr) tracks — the track can shrink, and the word
+   can break.
+
+   DELIBERATELY SCOPED to <=480px. Applied globally it also breaks words that
+   merely exceed a max-width with room to spare: .bay-herosplit__title is
+   max-width 26ch, so the desktop hero rendered "WILLKOMME / N IM CLUB". */
+@media (max-width: 480px) {
+  .bay-page,
+  .bay-display {
+    overflow-wrap: break-word;
+  }
+}
+
+/* Teal pill button (hero CTA) */
+.bay-pill {
+  display: inline-block;
+  background: var(--bay-teal);
+  color: var(--bay-on-teal);
+  font-family: var(--bay-font-heading);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 38px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  /* Never wider than whatever contains it. An inline-block with 38px of side
+     padding will happily exceed a 344px viewport once the root font is scaled
+     up (Samsung display scaling), which is horizontal scroll. border-box so
+     the padding counts inside the 100%. */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.bay-pill:hover {
+  background: var(--bay-teal-deep);
+}
+
+/* Edit-mode empty placeholder */
+.perIsEditAndEmpty {
+  padding: 24px;
+  border: 1px dashed var(--bay-teal);
+  color: var(--bay-ink-soft);
+  text-align: center;
+}
+
+/* Per-breakpoint component visibility (set via the Visibility dialog field) */
+@media (max-width: 820px) {
+  .bay-only-desktop:not(.bay-vis-author) {
+    display: none !important;
+  }
+}
+
+@media (min-width: 821px) {
+  .bay-only-mobile:not(.bay-vis-author) {
+    display: none !important;
+  }
+}
+
+/* Author mode: dim instead of hide so hidden components stay editable */
+.bay-vis-author {
+  opacity: 0.35;
+  outline: 2px dashed rgba(16, 16, 16, 0.4);
+  outline-offset: -2px;
+}
+
+/* --- <bay-media>: shared image/video slot ------------------------------- */
+/* The wrapper must not change layout when there is no video, so it inherits
+   the sizing its parent already applies to the <img>. */
+.bay-media {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.bay-media__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cover-fill: an iframe letterboxes because it has no intrinsic size, so it is
+   over-sized to the video's aspect ratio and centred, with .bay-media clipping
+   the overflow — the iframe equivalent of object-fit: cover. */
+.bay-media {
+  overflow: hidden;
+}
+
+/* The iframe is absolutely positioned, so a collapsed wrapper would show
+   nothing. Only applied when there IS a video — image-only slots keep
+   whatever height their component already gives them. */
+.bay-media--video {
+  min-height: 220px;
+}
+
+/* The poster sits under the iframe; once the video is up the poster is
+   hidden from assistive tech but kept painted as the backdrop, so there
+   is never a frame of empty background. */
+.bay-media--playing .bay-media__img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.bay-media--playing .bay-media__frame {
+  z-index: 1;
+}
+
+.bay-media__frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  border: 0;
+  pointer-events: auto;
+}
+
+@supports (aspect-ratio: 16 / 9) {
+  .bay-media__frame {
+    width: auto;
+    height: auto;
+    aspect-ratio: var(--bay-media-ratio, 16 / 9);
+  }
+}
+
+.bay-media__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 74px;
+  padding: 0 0 0 4px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  background: rgba(16, 16, 16, 0.45);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.bay-media__play:hover,
+.bay-media__play:focus-visible {
+  background: var(--bay-teal);
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
+@media (max-width: 620px) {
+  .bay-media__play { width: 58px; height: 58px; }
+}

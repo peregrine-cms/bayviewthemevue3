@@ -1,0 +1,12 @@
+{
+  "title": "Header (Badge)",
+  "group": "Structure",
+  "model": {
+    "brand": "",
+    "brandlink": "/content/bayviewthemevue3/pages/index",
+    "logo": "/content/bayviewthemevue3/assets/logo.png",
+    "logoalt": "Taekwondo Bern Crest",
+    "variant": "badge",
+    "shrink": "true"
+  }
+}

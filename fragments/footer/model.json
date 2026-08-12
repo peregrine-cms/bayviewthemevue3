@@ -1,0 +1,86 @@
+{
+  "definitions": {
+    "Footer": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "brand": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Brand (words stack per line)",
+          "x-form-type": "text"
+        },
+        "address": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Address",
+          "x-form-type": "texteditor"
+        },
+        "tel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Telephone",
+          "x-form-type": "text"
+        },
+        "email": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "E-Mail",
+          "x-form-type": "text"
+        },
+        "social": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Social Handle",
+          "x-form-type": "text"
+        },
+        "copyright": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Copyright Line",
+          "x-form-type": "text"
+        },
+        "image": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Photo (right)",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content/bayviewthemevue3/assets"
+        },
+        "imagealt": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Image Alt Text",
+          "x-form-type": "text"
+        },
+        "swap": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Swap Sides (mirror the two columns)",
+          "x-form-type": "materialswitch"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        },
+        "focusx": {
+          "$ref": "schemas/shared.json#/definitions/focusx"
+        },
+        "focusy": {
+          "$ref": "schemas/shared.json#/definitions/focusy"
+        },
+        "zoom": {
+          "$ref": "schemas/shared.json#/definitions/zoom"
+        },
+        "videourl": {
+          "$ref": "schemas/shared.json#/definitions/videourl"
+        },
+        "videoautoplay": {
+          "$ref": "schemas/shared.json#/definitions/videoautoplay"
+        },
+        "legallinks": {
+          "$ref": "schemas/shared.json#/definitions/namelinks"
+        }
+      }
+    }
+  }
+}

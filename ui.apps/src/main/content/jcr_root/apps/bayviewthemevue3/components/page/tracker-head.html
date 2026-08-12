@@ -1,0 +1,44 @@
+<!--/*
+    Theme override of the base page's head extension point
+    (apps/pagerendervue3/structure/page/page.html includes tracker-head.html).
+    The base emits no favicon at all, so browsers fall back to /favicon.ico —
+    which 404s behind the public-site rewrite rules.
+
+    Paths are built from helper.siteName so every tenant of this theme resolves
+    its own copy of the icons; the files live in assets/icons/ (themeclean-flex
+    convention) and are duplicated per site when a tenant is created.
+    NOTE: data-sly-use locals do NOT propagate into a data-sly-include, so the
+    helper has to be re-declared here or siteName renders empty (/content//...).
+*/-->
+<sly data-sly-use.helper="apps.pagerendervue3.structure.page.Helper"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/content/${helper.siteName}/assets/icons/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/content/${helper.siteName}/assets/icons/favicon-16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/content/${helper.siteName}/assets/icons/apple-touch-icon.png"/>
+<link rel="shortcut icon" href="/content/${helper.siteName}/assets/icons/favicon.ico"/>
+
+<!--/*
+    Preload the render-blocking framework JS.
+
+    These are <script src> tags further down the document, and Cloudflare's Early
+    Hints only builds its 103 responses from <link> tags — a <script src> is
+    invisible to it. Declaring them as <link rel=preload> here is what makes an
+    Early Hint possible at all.
+
+    WHY IT MATTERS HERE: the HTML costs ~361 ms TTFB, of which ~235 ms is Sling
+    rendering the page (a cached static file from the same origin answers in
+    ~47 ms, and cache-busted through the tunnel in ~127 ms). During that render
+    the browser has nothing to fetch. With Early Hints on, the 103 arrives first
+    and ~100 kB of framework JS downloads while the origin is still working.
+
+    ON THEIR OWN THESE LINKS BUY ALMOST NOTHING — the preload scanner already
+    finds the script tags while the HTML streams. They are here to give Early
+    Hints something to carry; the pairing is the point.
+
+    The Vue 2 line-up also preloaded vue-composition-api.prod.js. Vue 3 has the
+    Composition API built in, so that shim is gone -- one fewer request, and one
+    fewer thing to keep in step with the renderer.
+*/-->
+<link rel="preload" as="script" href="/etc/felibs/pagerendervue3/axios/axios.min.js"/>
+<link rel="preload" as="script" href="/etc/felibs/pagerendervue3/vue/vue.global.prod.js"/>
+<link rel="preload" as="script" href="/etc/felibs/pagerendervue3.js"/>
+<link rel="preload" as="script" href="/etc/felibs/${helper.siteName}.js"/>

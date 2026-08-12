@@ -1,0 +1,19 @@
+{
+  "definitions": {
+    "Threecols": {
+      "type": "object",
+      "x-type": "container",
+      "properties": {
+        "background": {
+          "$ref": "schemas/shared.json#/definitions/background"
+        },
+        "title": {
+          "$ref": "schemas/shared.json#/definitions/title"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

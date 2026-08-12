@@ -1,0 +1,90 @@
+{
+  "definitions": {
+    "Keydates": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "title": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Heading",
+          "x-form-type": "text"
+        },
+        "datelabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Date Column Label",
+          "x-form-type": "text"
+        },
+        "eventlabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Event Column Label",
+          "x-form-type": "text"
+        },
+        "image": {
+          "$ref": "schemas/shared.json#/definitions/image"
+        },
+        "imagealt": {
+          "$ref": "schemas/shared.json#/definitions/imagealt"
+        },
+        "items": {
+          "$ref": "schemas/shared.json#/definitions/dateevents"
+        },
+        "swap": {
+          "$ref": "schemas/shared.json#/definitions/swap"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        },
+        "focusx": {
+          "$ref": "schemas/shared.json#/definitions/focusx"
+        },
+        "focusy": {
+          "$ref": "schemas/shared.json#/definitions/focusy"
+        },
+        "zoom": {
+          "$ref": "schemas/shared.json#/definitions/zoom"
+        },
+        "source": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Datenquelle",
+          "x-form-type": "materialselect",
+          "x-default": "manual",
+          "properties": {
+            "manual": {
+              "x-form-name": "Manuelle Einträge",
+              "x-form-value": "manual"
+            },
+            "ical": {
+              "x-form-name": "Google Kalender (ganztägige Events)",
+              "x-form-value": "ical"
+            }
+          }
+        },
+        "daysahead": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Tage Vorschau (Kalender-Quelle)",
+          "x-form-type": "materialrange",
+          "x-form-min": 14,
+          "x-form-max": 365,
+          "x-default": 120
+        },
+        "maxitems": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Maximale Einträge (0 = alle)",
+          "x-form-type": "text"
+        },
+        "videourl": {
+          "$ref": "schemas/shared.json#/definitions/videourl"
+        },
+        "videoautoplay": {
+          "$ref": "schemas/shared.json#/definitions/videoautoplay"
+        }
+      }
+    }
+  }
+}

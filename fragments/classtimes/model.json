@@ -1,0 +1,23 @@
+{
+  "definitions": {
+    "Classtimes": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "classname": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Klassenname (wie im Kalender, z.B. 'Adults')",
+          "x-form-type": "text"
+        },
+        "label": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Beschriftung",
+          "x-form-type": "text"
+        },
+        "visibility": { "$ref": "schemas/shared.json#/definitions/visibility" }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "definitions": {
+    "Contact": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "title": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Heading",
+          "x-form-type": "text"
+        },
+        "image": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Side Photo",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content/bayviewthemevue3/assets"
+        },
+        "imagealt": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Image Alt Text",
+          "x-form-type": "text"
+        },
+        "namelabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Name Field Label",
+          "x-form-type": "text"
+        },
+        "emaillabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Email Field Label",
+          "x-form-type": "text"
+        },
+        "messagelabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Message Field Label",
+          "x-form-type": "text"
+        },
+        "buttontext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Button Label",
+          "x-form-type": "text"
+        },
+        "sendingtext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Button Label While Sending",
+          "x-form-type": "text"
+        },
+        "successtext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Confirmation Message",
+          "x-form-type": "text"
+        },
+        "errortext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Error Message",
+          "x-form-type": "text"
+        },
+        "note": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Note under the button",
+          "x-form-type": "text"
+        },
+        "action": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Form Action (mailto: or endpoint URL)",
+          "x-form-type": "text"
+        },
+        "swap": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Swap Sides (mirror the two columns)",
+          "x-form-type": "materialswitch"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        },
+        "focusx": {
+          "$ref": "schemas/shared.json#/definitions/focusx"
+        },
+        "focusy": {
+          "$ref": "schemas/shared.json#/definitions/focusy"
+        },
+        "zoom": {
+          "$ref": "schemas/shared.json#/definitions/zoom"
+        },
+        "videourl": {
+          "$ref": "schemas/shared.json#/definitions/videourl"
+        },
+        "videoautoplay": {
+          "$ref": "schemas/shared.json#/definitions/videoautoplay"
+        }
+      }
+    }
+  }
+}

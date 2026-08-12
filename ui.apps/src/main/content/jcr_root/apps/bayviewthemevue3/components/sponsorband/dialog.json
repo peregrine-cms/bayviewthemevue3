@@ -1,0 +1,120 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "title",
+          "label": "Heading",
+          "model": "title"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/bayviewthemevue3/assets",
+          "placeholder": "image",
+          "label": "Wide Photo",
+          "model": "image"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "imagealt",
+          "label": "Image Alt Text",
+          "model": "imagealt"
+        },
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            [
+              "name"
+            ],
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "name",
+              "label": "Name",
+              "model": "name"
+            },
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "link",
+              "label": "Link",
+              "model": "link"
+            }
+          ],
+          "placeholder": "sponsors",
+          "label": "Sponsors",
+          "model": "sponsors"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "focusx",
+          "label": "Focus Point X (0 = links, 100 = rechts)",
+          "model": "focusx",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "type": "material-range",
+          "placeholder": "focusy",
+          "label": "Focus Point Y (0 = oben, 100 = unten)",
+          "model": "focusy",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "type": "material-range",
+          "placeholder": "zoom",
+          "label": "Zoom (100 = normal, bis 200%)",
+          "model": "zoom",
+          "min": 100,
+          "max": 200
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "videourl",
+          "label": "Vimeo Video (URL oder ID) – nutzt das Bild als Vorschau",
+          "model": "videourl"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "videoautoplay",
+          "label": "Video automatisch abspielen (stumm, in Schleife)",
+          "model": "videoautoplay"
+        }
+      ]
+    }
+  ]
+}

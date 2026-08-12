@@ -1,0 +1,8 @@
+{
+  "title": "Schedule (Wochenplan)",
+  "group": "Content",
+  "model": {
+    "title": "Wochenplan",
+    "showinstructor": "true"
+  }
+}

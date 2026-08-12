@@ -1,0 +1,43 @@
+{
+  "definitions": {
+    "Legends": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "title": {
+          "$ref": "schemas/shared.json#/definitions/title"
+        },
+        "text": {
+          "$ref": "schemas/shared.json#/definitions/richtext"
+        },
+        "image": {
+          "$ref": "schemas/shared.json#/definitions/image"
+        },
+        "imagealt": {
+          "$ref": "schemas/shared.json#/definitions/imagealt"
+        },
+        "swap": {
+          "$ref": "schemas/shared.json#/definitions/swap"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        },
+        "focusx": {
+          "$ref": "schemas/shared.json#/definitions/focusx"
+        },
+        "focusy": {
+          "$ref": "schemas/shared.json#/definitions/focusy"
+        },
+        "zoom": {
+          "$ref": "schemas/shared.json#/definitions/zoom"
+        },
+        "videourl": {
+          "$ref": "schemas/shared.json#/definitions/videourl"
+        },
+        "videoautoplay": {
+          "$ref": "schemas/shared.json#/definitions/videoautoplay"
+        }
+      }
+    }
+  }
+}

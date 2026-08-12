@@ -1,0 +1,72 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "datelabel",
+          "label": "First Column Label",
+          "model": "datelabel"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "eventlabel",
+          "label": "Second Column Label",
+          "model": "eventlabel"
+        },
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            [
+              "date"
+            ],
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "date",
+              "label": "Date",
+              "model": "date"
+            },
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "event",
+              "label": "Event",
+              "model": "event"
+            }
+          ],
+          "placeholder": "items",
+          "label": "Rows",
+          "model": "items"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

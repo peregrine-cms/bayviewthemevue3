@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <!-- The theme owns and REPLACES all of its own namespaces on every build:
+         code (/apps, /etc/felibs) and its light reference content
+         (/content/bayviewthemevue3 = templates + placeholder assets + a reference page).
+         Production content lives in a SEPARATE tenant (e.g. /content/berncapitals)
+         created from this theme via the create-site API, so a theme rebuild never
+         touches it. -->
+    <filter root="/apps/bayviewthemevue3"/>
+    <filter root="/etc/felibs/bayviewthemevue3"/>
+    <filter root="/content/bayviewthemevue3"/>
+</workspaceFilter>

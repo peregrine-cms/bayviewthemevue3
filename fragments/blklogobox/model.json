@@ -1,0 +1,31 @@
+{
+  "definitions": {
+    "Blklogobox": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "text": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Text (words stack per line)",
+          "x-form-type": "text"
+        },
+        "dark": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Dark (ink outline for light backgrounds)",
+          "x-form-type": "materialswitch"
+        },
+        "overlay": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Overlay (center over the column's media)",
+          "x-form-type": "materialswitch"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

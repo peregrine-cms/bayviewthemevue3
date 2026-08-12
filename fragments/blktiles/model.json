@@ -1,0 +1,16 @@
+{
+  "definitions": {
+    "Blktiles": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "items": {
+          "$ref": "schemas/shared.json#/definitions/namelinks"
+        },
+        "visibility": {
+          "$ref": "schemas/shared.json#/definitions/visibility"
+        }
+      }
+    }
+  }
+}

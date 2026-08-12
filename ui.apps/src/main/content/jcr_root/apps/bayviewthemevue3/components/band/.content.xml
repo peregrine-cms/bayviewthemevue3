@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+  jcr:primaryType="per:Component" jcr:title="Band (Section)">
+  <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
+    <sample jcr:primaryType="nt:unstructured" title="Band (Section)" group="Blocks">
+      <jcr:content jcr:primaryType="nt:unstructured" background="white" contained="true">
+        <content jcr:primaryType="nt:unstructured" sling:resourceType="pagerendervue/structure/container"/>
+      </jcr:content>
+    </sample>
+  </jcr:content>
+</jcr:root>

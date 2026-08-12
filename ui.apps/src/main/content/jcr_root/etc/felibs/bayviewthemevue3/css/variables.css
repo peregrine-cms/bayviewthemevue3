@@ -1,0 +1,41 @@
+/*
+ * Bayview Theme - Design Tokens
+ * Muted teal club palette (Bayview FC design study, carrying
+ * Taekwondo Bern content)
+ */
+:root {
+  /* Palette */
+  /* Teal was #7fa6aa, which gave white text only 2.65:1 — below even the 3:1
+     large-text floor, so the sponsorband title, the sponsor tiles (12.8px) and
+     the hero CTA pill (13.6px) all failed WCAG AA. A heavier font weight does
+     not help: the 3:1 allowance only applies from 18.66px bold upwards, and
+     both small elements are well under that.
+
+     #557d81 is the lightest colour on the same hue (186deg, 20% sat) that
+     clears 4.5:1 against white, so it is the smallest move that fixes the
+     binding constraint while keeping the design's white-on-teal character.
+     --bay-teal-deep keeps its old relationship to it (~4% lighter -> darker).
+     Deep doubles as a FOREGROUND colour (nav hover, schedule times on white);
+     at the old #6e979b that was 3.20:1 and also failing. Now 5.34:1. */
+  --bay-teal: #557d81;             /* panels, bands, CTA pills — 4.53:1 on white */
+  --bay-teal-deep: #4d7174;        /* hover, form option bars, teal text — 5.34:1 */
+  --bay-cream: #f1eee7;            /* secondary band background */
+  --bay-white: #ffffff;            /* primary background */
+  --bay-ink: #101010;              /* near-black text */
+  --bay-ink-soft: #3c3c3c;         /* body text */
+  --bay-line: #101010;             /* 1px box borders (black) */
+  --bay-on-teal: #ffffff;          /* text on teal */
+
+  /* Typography */
+  --bay-font-heading: 'Archivo', 'Archivo Fallback', sans-serif;
+  --bay-font-body: 'Poppins', 'Poppins Fallback', sans-serif;
+
+  /* Type scale */
+  --bay-display: clamp(2.4rem, 6vw, 4.6rem);   /* WELCOME TO THE CLUB */
+  --bay-band: clamp(2rem, 5vw, 3.6rem);        /* section band titles */
+
+  /* Layout */
+  --bay-content-max: 1280px;
+  --bay-content-padding: 24px;
+  --bay-gap: 24px;
+}

@@ -1,0 +1,140 @@
+<!-- js includes required for this renderer -->
+
+<sly data-sly-use.helper="apps.pagerendervue3.structure.page.Helper"/>
+<!--
+  LCP image preload. Runs here on purpose: this is the first point after the
+  #perPage JSON exists and BEFORE the ~100 kB of blocking framework JS below,
+  so the hero image downloads in parallel with those scripts instead of waiting
+  for Vue to mount and create the <img>. Lighthouse reported the LCP image as
+  `requestDiscoverable: false` precisely because nothing in the static HTML
+  references it.
+
+  Inline rather than in the felib because the felib IS what we are trying to
+  get ahead of.
+
+  KNOWN LIMITATION: a <link> injected by script cannot become a Cloudflare
+  Early Hint — Cloudflare builds 103 responses from <link> tags present in the
+  HTML. With the origin behind a tunnel (375-500 ms to first byte) an Early
+  Hint would beat this by a wide margin. The trade taken here is staleness:
+  this reads the real content every load, whereas a server-emitted <link> fed
+  by a page property goes wrong the moment an author swaps the hero image.
+
+  DOUBLE-DOWNLOAD GUARD: a preload whose URL/srcset/sizes differ at all from
+  what the component renders makes the browser fetch TWICE — worse than no
+  preload. So SPEC below must mirror the component's <bay-media> attributes
+  exactly, and anything not in SPEC is deliberately skipped rather than
+  guessed at.
+-->
+<script>
+(function () {
+  try {
+    var el = document.getElementById('perPage');
+    if (!el) return;
+    var model = JSON.parse(el.textContent || el.innerHTML);
+
+    // Mirror of zzBayImg.isEdgeOptimised(): /cdn-cgi/ only exists in front of
+    // Cloudflare, so off-domain (localhost, authoring) the raw path is used.
+    var server = window.location.protocol + '//' + window.location.hostname;
+    var domains = model.domains || [];
+    var edge = false;
+    for (var d = 0; d < domains.length; d++) { if (domains[d] === server) edge = true; }
+
+    // component suffix -> the exact <bay-media> attributes that component uses.
+    // Keep in step with the component templates, or remove the entry.
+    var SPEC = {
+      'herosplit': { widths: [500, 900, 1300, 1800], fallback: 900,
+                     sizes: '(max-width: 820px) 100vw, 50vw' }
+    };
+
+    function specFor(node) {
+      var name = String(node && node.component || '');
+      var key = name.substring(name.lastIndexOf('-') + 1);
+      return SPEC[key] || null;
+    }
+
+    // Depth-first in render order; the first match is the LCP candidate. Only
+    // ONE image is preloaded: marking several defeats the prioritisation.
+    var found = null;
+    (function walk(node) {
+      if (found || !node || typeof node !== 'object') return;
+      if (Object.prototype.toString.call(node) === '[object Array]') {
+        for (var i = 0; i < node.length && !found; i++) walk(node[i]);
+        return;
+      }
+      var spec = specFor(node);
+      if (spec && typeof node.image === 'string' && node.image) {
+        found = { path: node.image, spec: spec };
+        return;
+      }
+      for (var k in node) {
+        if (found) return;
+        if (node[k] && typeof node[k] === 'object') walk(node[k]);
+      }
+    })(model.children);
+
+    if (!found) return;
+
+    // Mirror of zzBayImg.toUrl(). pathToUrl() is a no-op for anything with a
+    // file extension, so an asset path needs no further resolution here.
+    function toUrl(path, width) {
+      if (/^https?:\/\//.test(path) || path.indexOf('/cdn-cgi/') === 0) return path;
+      if (!edge) return path;
+      return '/cdn-cgi/image/width=' + width + ',format=auto,quality=80' +
+             (path.charAt(0) === '/' ? path : '/' + path);
+    }
+
+    var link = document.createElement('link');
+    link.rel = 'preload';
+    link.as = 'image';
+    link.href = toUrl(found.path, found.spec.fallback);
+    link.setAttribute('fetchpriority', 'high');
+    if (edge) {
+      var set = [];
+      for (var w = 0; w < found.spec.widths.length; w++) {
+        var width = found.spec.widths[w];
+        set.push(toUrl(found.path, width) + ' ' + width + 'w');
+      }
+      link.setAttribute('imagesrcset', set.join(', '));
+      link.setAttribute('imagesizes', found.spec.sizes);
+    }
+    document.head.appendChild(link);
+  } catch (e) {
+    // Never let a preload optimisation break the page.
+  }
+})();
+</script>
+<sly data-sly-include="/apps/pagerendervue3/structure/page/renderer.html"/>
+<!-- lodash / ical / jsonforms are NOT loaded here any more: they were ~194 kB
+     on every page for the benefit of two of them. zzBayDeps.js in the felib
+     inspects the page model and pulls only what that page needs, on the initial
+     render and again on each SPA navigation. -->
+<script src="/etc/felibs/${helper.siteName}.js"></script>
+<script>
+    $peregrineApp.loadComponent('pagerendervue3-components-placeholder')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-header')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-herosplit')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-legends')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-sponsorband')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-register')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-leagues')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-keydates')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-gallery')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-contact')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-footer')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-band')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-splitrow')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-threecols')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-blkheading')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-blktext')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-blkimage')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-blkbutton')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-blklogobox')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-blktable')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-blkspacer')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-blktiles')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-form')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-eventlist')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-pagenav')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-classtimes')
+    $peregrineApp.loadComponent('bayviewthemevue3-components-schedule')
+</script>

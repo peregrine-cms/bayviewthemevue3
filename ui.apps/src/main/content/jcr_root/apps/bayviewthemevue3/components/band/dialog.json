@@ -1,0 +1,85 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "White",
+              "value": "white"
+            },
+            {
+              "name": "Cream",
+              "value": "cream"
+            },
+            {
+              "name": "Teal",
+              "value": "teal"
+            }
+          ],
+          "placeholder": "background",
+          "label": "Background",
+          "model": "background"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "contained",
+          "label": "Constrain content width (page container)",
+          "model": "contained"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "flush",
+          "label": "Flush (no vertical padding)",
+          "model": "flush"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Compact",
+              "value": "compact"
+            },
+            {
+              "name": "Roomy (section)",
+              "value": "roomy"
+            }
+          ],
+          "placeholder": "padding",
+          "label": "Vertical Padding",
+          "model": "padding"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

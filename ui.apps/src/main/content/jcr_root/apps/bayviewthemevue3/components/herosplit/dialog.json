@@ -1,0 +1,129 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/bayviewthemevue3/assets",
+          "placeholder": "image",
+          "label": "Hero Image (left)",
+          "model": "image"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "imagealt",
+          "label": "Image Alt Text",
+          "model": "imagealt"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "logotext",
+          "label": "Logo Box Text (words stack per line)",
+          "model": "logotext"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "kicker",
+          "label": "Kicker (small text, top right)",
+          "model": "kicker"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "title",
+          "label": "Headline",
+          "model": "title"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "ctatext",
+          "label": "Button Label",
+          "model": "ctatext"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content",
+          "placeholder": "ctalink",
+          "label": "Button Link",
+          "model": "ctalink"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "swap",
+          "label": "Swap Sides (mirror the two columns)",
+          "model": "swap"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "focusx",
+          "label": "Focus Point X (0 = links, 100 = rechts)",
+          "model": "focusx",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "type": "material-range",
+          "placeholder": "focusy",
+          "label": "Focus Point Y (0 = oben, 100 = unten)",
+          "model": "focusy",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "type": "material-range",
+          "placeholder": "zoom",
+          "label": "Zoom (100 = normal, bis 200%)",
+          "model": "zoom",
+          "min": 100,
+          "max": 200
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "videourl",
+          "label": "Vimeo Video (URL oder ID) – nutzt das Bild als Vorschau",
+          "model": "videourl"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "videoautoplay",
+          "label": "Video automatisch abspielen (stumm, in Schleife)",
+          "model": "videoautoplay"
+        }
+      ]
+    }
+  ]
+}

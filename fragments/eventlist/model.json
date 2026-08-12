@@ -1,0 +1,33 @@
+{
+  "definitions": {
+    "Eventlist": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "title": { "$ref": "schemas/shared.json#/definitions/title" },
+        "daysahead": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Days to look ahead",
+          "x-form-type": "materialrange",
+          "x-form-min": 14,
+          "x-form-max": 365,
+          "x-default": 120
+        },
+        "maxitems": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Maximum entries (0 = all)",
+          "x-form-type": "text"
+        },
+        "showlocation": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Show location",
+          "x-form-type": "materialswitch"
+        },
+        "visibility": { "$ref": "schemas/shared.json#/definitions/visibility" }
+      }
+    }
+  }
+}

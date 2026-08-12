@@ -1,0 +1,5 @@
+{
+  "title": "Date Table",
+  "group": "Blocks",
+  "model": { "datelabel": "Datum", "eventlabel": "Event" }
+}

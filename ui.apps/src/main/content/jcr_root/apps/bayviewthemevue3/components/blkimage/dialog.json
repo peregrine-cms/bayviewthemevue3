@@ -1,0 +1,130 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/bayviewthemevue3/assets",
+          "placeholder": "image",
+          "label": "Image",
+          "model": "image"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "imagealt",
+          "label": "Image Alt Text",
+          "model": "imagealt"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Auto (natural)",
+              "value": "auto"
+            },
+            {
+              "name": "Small (220px cover)",
+              "value": "small"
+            },
+            {
+              "name": "Medium (340px cover)",
+              "value": "medium"
+            },
+            {
+              "name": "Large (480px cover)",
+              "value": "large"
+            },
+            {
+              "name": "Fill parent",
+              "value": "fill"
+            },
+            {
+              "name": "Banner (420px cover)",
+              "value": "banner"
+            },
+            {
+              "name": "Tile (265px cover)",
+              "value": "tile"
+            }
+          ],
+          "placeholder": "height",
+          "label": "Height",
+          "model": "height"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "fullbleed",
+          "label": "Full bleed (break out of the container width)",
+          "model": "fullbleed"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "focusx",
+          "label": "Focus Point X (0 = links, 100 = rechts)",
+          "model": "focusx",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "type": "material-range",
+          "placeholder": "focusy",
+          "label": "Focus Point Y (0 = oben, 100 = unten)",
+          "model": "focusy",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "type": "material-range",
+          "placeholder": "zoom",
+          "label": "Zoom (100 = normal, bis 200%)",
+          "model": "zoom",
+          "min": 100,
+          "max": 200
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "videourl",
+          "label": "Vimeo Video (URL oder ID) – nutzt das Bild als Vorschau",
+          "model": "videourl"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "videoautoplay",
+          "label": "Video automatisch abspielen (stumm, in Schleife)",
+          "model": "videoautoplay"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "groups": [
+    {
+      "legend": "others",
+      "fields": [
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content",
+          "placeholder": "schema",
+          "label": "Form Schema (JSON Schema file)",
+          "model": "schema"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content",
+          "placeholder": "uischema",
+          "label": "UI Schema (JSON Forms UI schema file)",
+          "model": "uischema"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "endpointurl",
+          "label": "Submit endpoint URL (e.g. https://formspree.io/f/<id>)",
+          "model": "endpointurl"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "submitfunction",
+          "label": "Custom submit function (window.* path, optional)",
+          "model": "submitfunction"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "submittext",
+          "label": "Button Label",
+          "model": "submittext"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "successmessage",
+          "label": "Success Message (shown inline)",
+          "model": "successmessage"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content",
+          "placeholder": "successpage",
+          "label": "Success Page (optional, overrides message)",
+          "model": "successpage"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "failmessage",
+          "label": "Failure Message",
+          "model": "failmessage"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Light (outlined box, ink on white)",
+              "value": "light"
+            },
+            {
+              "name": "On teal (white outlined box)",
+              "value": "teal"
+            }
+          ],
+          "placeholder": "style",
+          "label": "Style",
+          "model": "style"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Black bar",
+              "value": "black"
+            },
+            {
+              "name": "White pill",
+              "value": "white"
+            }
+          ],
+          "placeholder": "submitstyle",
+          "label": "Submit Button",
+          "model": "submitstyle"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Immer sichtbar",
+              "value": "all"
+            },
+            {
+              "name": "Nur Desktop (ab 821px)",
+              "value": "desktop"
+            },
+            {
+              "name": "Nur Mobile (bis 820px)",
+              "value": "mobile"
+            }
+          ],
+          "placeholder": "visibility",
+          "label": "Visibility",
+          "model": "visibility"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Contact (mirrored)",
+  "group": "Content",
+  "model": {
+    "title": "Kontakt",
+    "image": "/content/bayviewthemevue3/assets/poomsae-kid.jpg",
+    "imagealt": "Poomsae Training",
+    "namelabel": "Name",
+    "emaillabel": "E-Mail Adresse",
+    "messagelabel": "Deine Nachricht",
+    "buttontext": "Senden",
+    "note": "Kostenloses Schnuppertraining – kontaktiere uns!",
+    "action": "mailto:info@taekwondobern.ch",
+    "swap": "true"
+  }
+}
