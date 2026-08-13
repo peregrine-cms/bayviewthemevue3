@@ -227,3 +227,41 @@ p {
 @media (max-width: 620px) {
   .bay-media__play { width: 58px; height: 58px; }
 }
+
+/* ---- editor-only empty-state affordances --------------------------------- */
+/* Components set data-bay-hint ONLY in author mode when their key content is
+   missing, so a freshly dropped block stays visible and selectable instead of
+   rendering as a zero-size (or absent) element. Public rendering never carries
+   the attribute and is unaffected. */
+[data-bay-hint] {
+  outline: 1.5px dashed #b58900;
+  outline-offset: 2px;
+  min-height: 1.5em;
+  min-width: 8ch;
+}
+
+/* the hint disappears as soon as the element has any content (e.g. while
+   typing during inline editing) */
+[data-bay-hint]:empty::before {
+  content: attr(data-bay-hint);
+  color: #8a6d1a;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: var(--bay-font-body, sans-serif);
+  font-size: 0.85rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-transform: none;
+  pointer-events: none;
+  display: inline-block;
+  padding: 2px 6px;
+}
+
+.bay-editor-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  background: rgba(0, 0, 0, 0.04);
+}

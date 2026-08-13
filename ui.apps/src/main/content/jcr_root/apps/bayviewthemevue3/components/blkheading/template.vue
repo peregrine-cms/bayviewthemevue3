@@ -1,14 +1,19 @@
 <template>
   <component :is="model.level || 'h2'" class="bay-blkheading" :class="headingClasses"
-    :data-per-path="model.path" data-per-inline="model.text">{{ model.text }}</component>
+    :data-per-path="model.path" data-per-inline="model.text"
+    :data-bay-hint="isEdit && !model.text ? 'Heading — type here or open the properties' : null"
+    >{{ model.text }}</component>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, inject } from 'vue'
 
 const props = defineProps({
   model: { type: Object, required: true, default: () => ({}) }
 })
+
+const peregrineApp = inject('peregrineApp', null)
+const isEdit = computed(() => peregrineApp?.isAuthorMode?.() ?? false)
 
 const headingClasses = computed(() => {
     var c = ['bay-blkheading--' + (props.model.size || 'band')]

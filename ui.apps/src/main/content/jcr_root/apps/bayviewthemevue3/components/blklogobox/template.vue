@@ -1,16 +1,20 @@
 <template>
   <div class="bay-blklogobox" :class="boxClasses"
-    :data-per-path="model.path">
+    :data-per-path="model.path"
+    :data-bay-hint="isEdit && !words.length ? 'Logo box — set text in the properties' : null">
     <span v-for="(word, i) in words" :key="i">{{ word }}</span>
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, inject } from 'vue'
 
 const props = defineProps({
   model: { type: Object, required: true, default: () => ({}) }
 })
+
+const peregrineApp = inject('peregrineApp', null)
+const isEdit = computed(() => peregrineApp?.isAuthorMode?.() ?? false)
 
 const words = computed(() => {
     return (props.model.text || '').split(' ').filter(Boolean)

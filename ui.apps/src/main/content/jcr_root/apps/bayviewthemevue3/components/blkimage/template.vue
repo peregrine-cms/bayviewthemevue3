@@ -7,14 +7,22 @@
                :widths="[400, 800, 1200, 1600]"
                sizes="(max-width: 820px) 100vw, 50vw"></bay-media>
   </div>
+  <!-- without an image the block used to render NOTHING, leaving the editor no
+       element to select; in author mode keep a visible, selectable placeholder -->
+  <div v-else-if="isEdit" class="bay-blkimage bay-editor-placeholder"
+       :data-per-path="model.path"
+       data-bay-hint="Image — choose an image in the properties"></div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, inject } from 'vue'
 
 const props = defineProps({
   model: { type: Object, required: true, default: () => ({}) }
 })
+
+const peregrineApp = inject('peregrineApp', null)
+const isEdit = computed(() => peregrineApp?.isAuthorMode?.() ?? false)
 
 const imgClasses = computed(() => {
     var c = ['bay-blkimage--' + (props.model.height || 'medium')]

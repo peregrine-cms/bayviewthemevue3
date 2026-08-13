@@ -1,5 +1,6 @@
 <template>
-  <div class="bay-blktiles" :data-per-path="model.path">
+  <div class="bay-blktiles" :data-per-path="model.path"
+    :data-bay-hint="isEdit && !(model.items && model.items.length) ? 'Tiles — add items in the properties' : null">
     <a class="bay-blktiles__tile" v-for="s in model.items" :key="s.name" :href="s.link || '#'" target="_blank" rel="noopener">
       <svg class="bay-blktiles__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
         <path d="M12 3 L20 7.5 V16.5 L12 21 L4 16.5 V7.5 Z"/>
@@ -10,9 +11,14 @@
 </template>
 
 <script setup>
+import { computed, inject } from 'vue'
+
 defineProps({
   model: { type: Object, required: true, default: () => ({}) }
 })
+
+const peregrineApp = inject('peregrineApp', null)
+const isEdit = computed(() => peregrineApp?.isAuthorMode?.() ?? false)
 </script>
 
 <style>

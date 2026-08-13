@@ -1,13 +1,19 @@
 <template>
   <div class="bay-blktext" :class="['bay-blktext--' + (model.align || 'left'), 'bay-blktext--size-' + (model.size || 'normal')]"
     :data-per-path="model.path" v-html="model.text"
+    :data-bay-hint="isEdit && !model.text ? 'Text — type here or open the properties' : null"
     :data-per-inline="`model.text`"></div>
 </template>
 
 <script setup>
+import { computed, inject } from 'vue'
+
 defineProps({
   model: { type: Object, required: true, default: () => ({}) }
 })
+
+const peregrineApp = inject('peregrineApp', null)
+const isEdit = computed(() => peregrineApp?.isAuthorMode?.() ?? false)
 </script>
 
 <style>

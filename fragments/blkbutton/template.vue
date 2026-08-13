@@ -1,15 +1,18 @@
 <template>
   <div class="bay-blkbutton" :data-per-path="model.path">
-    <a :class="btnClass" :href="$helper.pathToUrl(model.link)">{{ model.text }}</a>
+    <a :class="btnClass" :href="$helper.pathToUrl(model.link)">{{ model.text || (isEdit ? 'Button — set text in properties' : '') }}</a>
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, inject } from 'vue'
 
 const props = defineProps({
   model: { type: Object, required: true, default: () => ({}) }
 })
+
+const peregrineApp = inject('peregrineApp', null)
+const isEdit = computed(() => peregrineApp?.isAuthorMode?.() ?? false)
 
 const btnClass = computed(() => {
     var s = props.model.style || 'teal'
