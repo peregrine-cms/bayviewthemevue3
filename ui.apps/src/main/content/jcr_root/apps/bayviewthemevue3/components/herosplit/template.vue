@@ -20,7 +20,7 @@
         <p class="bay-herosplit__kicker" v-if="model.kicker" data-per-inline="model.kicker">{{ model.kicker }}</p>
         <h1 class="bay-herosplit__title" v-if="model.title" data-per-inline="model.title">{{ model.title }}</h1>
         <div class="bay-herosplit__ctarow">
-          <a class="bay-pill" v-if="model.ctatext" :href="$helper.pathToUrl(model.ctalink)">{{ model.ctatext }}</a>
+          <a class="bay-pill" v-if="model.ctatext" :href="$helper.pathToUrl(model.ctalink)" data-per-inline="model.ctatext">{{ model.ctatext }}</a>
         </div>
       </div>
     </div>

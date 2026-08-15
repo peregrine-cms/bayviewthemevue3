@@ -1,6 +1,6 @@
 <template>
   <div class="bay-blkbutton" :data-per-path="model.path">
-    <a :class="btnClass" :href="$helper.pathToUrl(model.link)">{{ model.text || (isEdit ? 'Button — set text in properties' : '') }}</a>
+    <a :class="btnClass" :href="$helper.pathToUrl(model.link)" data-per-inline="model.text">{{ model.text || (isEdit ? 'Button — set text in properties' : '') }}</a>
   </div>
 </template>
 
