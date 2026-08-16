@@ -91,15 +91,15 @@ import javax.inject.Named;
           "x-default": "all",
           "properties": {
             "all": {
-              "x-form-name": "Immer sichtbar",
+              "x-form-name": "Always visible",
               "x-form-value": "all"
             },
             "desktop": {
-              "x-form-name": "Nur Desktop (ab 821px)",
+              "x-form-name": "Desktop only (821px and up)",
               "x-form-value": "desktop"
             },
             "mobile": {
-              "x-form-name": "Nur Mobile (bis 820px)",
+              "x-form-name": "Mobile only (up to 820px)",
               "x-form-value": "mobile"
             }
           }
@@ -107,7 +107,7 @@ import javax.inject.Named;
         "focusx": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Focus Point X (0 = links, 100 = rechts)",
+          "x-form-label": "Focus point X (0 = left, 100 = right)",
           "x-form-type": "materialrange",
           "x-form-min": 0,
           "x-form-max": 100,
@@ -116,7 +116,7 @@ import javax.inject.Named;
         "focusy": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Focus Point Y (0 = oben, 100 = unten)",
+          "x-form-label": "Focus point Y (0 = top, 100 = bottom)",
           "x-form-type": "materialrange",
           "x-form-min": 0,
           "x-form-max": 100,
@@ -125,7 +125,7 @@ import javax.inject.Named;
         "zoom": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Zoom (100 = normal, bis 200%)",
+          "x-form-label": "Zoom (100 = normal, up to 200%)",
           "x-form-type": "materialrange",
           "x-form-min": 100,
           "x-form-max": 200,
@@ -166,13 +166,13 @@ import javax.inject.Named;
         "videourl": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Vimeo Video (URL oder ID) – nutzt das Bild als Vorschau",
+          "x-form-label": "Vimeo video (URL or ID) — uses the image as its poster",
           "x-form-type": "text"
         },
         "videoautoplay": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Video automatisch abspielen (stumm, in Schleife)",
+          "x-form-label": "Autoplay video (muted, looped)",
           "x-form-type": "materialswitch"
         }
       }
@@ -233,22 +233,22 @@ public class KeydatesModel extends AbstractComponent {
 	@Inject
 	private String swap;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Visibility","x-form-type":"materialselect","x-default":"all","properties":{"all":{"x-form-name":"Immer sichtbar","x-form-value":"all"},"desktop":{"x-form-name":"Nur Desktop (ab 821px)","x-form-value":"desktop"},"mobile":{"x-form-name":"Nur Mobile (bis 820px)","x-form-value":"mobile"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Visibility","x-form-type":"materialselect","x-default":"all","properties":{"all":{"x-form-name":"Always visible","x-form-value":"all"},"desktop":{"x-form-name":"Desktop only (821px and up)","x-form-value":"desktop"},"mobile":{"x-form-name":"Mobile only (up to 820px)","x-form-value":"mobile"}}} */
 	@Inject
 	@Default(values ="all")
 	private String visibility;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Focus Point X (0 = links, 100 = rechts)","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-default":50} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Focus point X (0 = left, 100 = right)","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-default":50} */
 	@Inject
 	@Default(values ="50")
 	private String focusx;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Focus Point Y (0 = oben, 100 = unten)","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-default":50} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Focus point Y (0 = top, 100 = bottom)","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-default":50} */
 	@Inject
 	@Default(values ="50")
 	private String focusy;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Zoom (100 = normal, bis 200%)","x-form-type":"materialrange","x-form-min":100,"x-form-max":200,"x-default":100} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Zoom (100 = normal, up to 200%)","x-form-type":"materialrange","x-form-min":100,"x-form-max":200,"x-default":100} */
 	@Inject
 	@Default(values ="100")
 	private String zoom;
@@ -267,11 +267,11 @@ public class KeydatesModel extends AbstractComponent {
 	@Inject
 	private String maxitems;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Vimeo Video (URL oder ID) – nutzt das Bild als Vorschau","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Vimeo video (URL or ID) — uses the image as its poster","x-form-type":"text"} */
 	@Inject
 	private String videourl;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Video automatisch abspielen (stumm, in Schleife)","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Autoplay video (muted, looped)","x-form-type":"materialswitch"} */
 	@Inject
 	private String videoautoplay;
 
@@ -314,22 +314,22 @@ public class KeydatesModel extends AbstractComponent {
 		return swap;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Visibility","x-form-type":"materialselect","x-default":"all","properties":{"all":{"x-form-name":"Immer sichtbar","x-form-value":"all"},"desktop":{"x-form-name":"Nur Desktop (ab 821px)","x-form-value":"desktop"},"mobile":{"x-form-name":"Nur Mobile (bis 820px)","x-form-value":"mobile"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Visibility","x-form-type":"materialselect","x-default":"all","properties":{"all":{"x-form-name":"Always visible","x-form-value":"all"},"desktop":{"x-form-name":"Desktop only (821px and up)","x-form-value":"desktop"},"mobile":{"x-form-name":"Mobile only (up to 820px)","x-form-value":"mobile"}}} */
 	public String getVisibility() {
 		return visibility;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Focus Point X (0 = links, 100 = rechts)","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-default":50} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Focus point X (0 = left, 100 = right)","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-default":50} */
 	public String getFocusx() {
 		return focusx;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Focus Point Y (0 = oben, 100 = unten)","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-default":50} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Focus point Y (0 = top, 100 = bottom)","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-default":50} */
 	public String getFocusy() {
 		return focusy;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Zoom (100 = normal, bis 200%)","x-form-type":"materialrange","x-form-min":100,"x-form-max":200,"x-default":100} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Zoom (100 = normal, up to 200%)","x-form-type":"materialrange","x-form-min":100,"x-form-max":200,"x-default":100} */
 	public String getZoom() {
 		return zoom;
 	}
@@ -349,12 +349,12 @@ public class KeydatesModel extends AbstractComponent {
 		return maxitems;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Vimeo Video (URL oder ID) – nutzt das Bild als Vorschau","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Vimeo video (URL or ID) — uses the image as its poster","x-form-type":"text"} */
 	public String getVideourl() {
 		return videourl;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Video automatisch abspielen (stumm, in Schleife)","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Autoplay video (muted, looped)","x-form-type":"materialswitch"} */
 	public String getVideoautoplay() {
 		return videoautoplay;
 	}

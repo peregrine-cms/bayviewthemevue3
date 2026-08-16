@@ -66,15 +66,15 @@
           "type": "material-select",
           "values": [
             {
-              "name": "Immer sichtbar",
+              "name": "Always visible",
               "value": "all"
             },
             {
-              "name": "Nur Desktop (ab 821px)",
+              "name": "Desktop only (821px and up)",
               "value": "desktop"
             },
             {
-              "name": "Nur Mobile (bis 820px)",
+              "name": "Mobile only (up to 820px)",
               "value": "mobile"
             }
           ],
@@ -85,7 +85,7 @@
         {
           "type": "material-range",
           "placeholder": "focusx",
-          "label": "Focus Point X (0 = links, 100 = rechts)",
+          "label": "Focus point X (0 = left, 100 = right)",
           "model": "focusx",
           "min": 0,
           "max": 100
@@ -93,7 +93,7 @@
         {
           "type": "material-range",
           "placeholder": "focusy",
-          "label": "Focus Point Y (0 = oben, 100 = unten)",
+          "label": "Focus point Y (0 = top, 100 = bottom)",
           "model": "focusy",
           "min": 0,
           "max": 100
@@ -101,7 +101,7 @@
         {
           "type": "material-range",
           "placeholder": "zoom",
-          "label": "Zoom (100 = normal, bis 200%)",
+          "label": "Zoom (100 = normal, up to 200%)",
           "model": "zoom",
           "min": 100,
           "max": 200
@@ -110,7 +110,7 @@
           "type": "input",
           "inputType": "text",
           "placeholder": "videourl",
-          "label": "Vimeo Video (URL oder ID) – nutzt das Bild als Vorschau",
+          "label": "Vimeo video (URL or ID) — uses the image as its poster",
           "model": "videourl"
         },
         {
@@ -120,7 +120,7 @@
           "valueOn": "true",
           "valueOff": "false",
           "placeholder": "videoautoplay",
-          "label": "Video automatisch abspielen (stumm, in Schleife)",
+          "label": "Autoplay video (muted, looped)",
           "model": "videoautoplay"
         }
       ]

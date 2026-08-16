@@ -50,15 +50,15 @@
           "type": "material-select",
           "values": [
             {
-              "name": "Immer sichtbar",
+              "name": "Always visible",
               "value": "all"
             },
             {
-              "name": "Nur Desktop (ab 821px)",
+              "name": "Desktop only (821px and up)",
               "value": "desktop"
             },
             {
-              "name": "Nur Mobile (bis 820px)",
+              "name": "Mobile only (up to 820px)",
               "value": "mobile"
             }
           ],

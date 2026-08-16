@@ -49,15 +49,15 @@ import javax.inject.Named;
           "x-default": "all",
           "properties": {
             "all": {
-              "x-form-name": "Immer sichtbar",
+              "x-form-name": "Always visible",
               "x-form-value": "all"
             },
             "desktop": {
-              "x-form-name": "Nur Desktop (ab 821px)",
+              "x-form-name": "Desktop only (821px and up)",
               "x-form-value": "desktop"
             },
             "mobile": {
-              "x-form-name": "Nur Mobile (bis 820px)",
+              "x-form-name": "Mobile only (up to 820px)",
               "x-form-value": "mobile"
             }
           }
@@ -104,7 +104,7 @@ public class BlklogoboxModel extends AbstractComponent {
 	@Inject
 	private String overlay;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Visibility","x-form-type":"materialselect","x-default":"all","properties":{"all":{"x-form-name":"Immer sichtbar","x-form-value":"all"},"desktop":{"x-form-name":"Nur Desktop (ab 821px)","x-form-value":"desktop"},"mobile":{"x-form-name":"Nur Mobile (bis 820px)","x-form-value":"mobile"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Visibility","x-form-type":"materialselect","x-default":"all","properties":{"all":{"x-form-name":"Always visible","x-form-value":"all"},"desktop":{"x-form-name":"Desktop only (821px and up)","x-form-value":"desktop"},"mobile":{"x-form-name":"Mobile only (up to 820px)","x-form-value":"mobile"}}} */
 	@Inject
 	@Default(values ="all")
 	private String visibility;
@@ -128,7 +128,7 @@ public class BlklogoboxModel extends AbstractComponent {
 		return overlay;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Visibility","x-form-type":"materialselect","x-default":"all","properties":{"all":{"x-form-name":"Immer sichtbar","x-form-value":"all"},"desktop":{"x-form-name":"Nur Desktop (ab 821px)","x-form-value":"desktop"},"mobile":{"x-form-name":"Nur Mobile (bis 820px)","x-form-value":"mobile"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Visibility","x-form-type":"materialselect","x-default":"all","properties":{"all":{"x-form-name":"Always visible","x-form-value":"all"},"desktop":{"x-form-name":"Desktop only (821px and up)","x-form-value":"desktop"},"mobile":{"x-form-name":"Mobile only (up to 820px)","x-form-value":"mobile"}}} */
 	public String getVisibility() {
 		return visibility;
 	}
