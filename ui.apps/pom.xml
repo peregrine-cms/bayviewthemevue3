@@ -63,8 +63,26 @@
                             <goal>install-node-and-npm</goal>
                         </goals>
                         <configuration>
-                            <nodeVersion>v18.19.0</nodeVersion>
-                            <npmVersion>10.2.3</npmVersion>
+                            <!--
+                                v24 is the current LTS line (Krypton). node is
+                                build-time only — the runtime image ships Java 25
+                                and contains no node at all — so this affects the
+                                toolchain and nothing that gets deployed.
+
+                                Pinned ahead of the peregrine-cms parent, which
+                                still sets node.version to v12.18.3.
+
+                                npmVersion is pinned to the one node 24.19.0
+                                bundles. Leaving it unset looks tidier but this
+                                plugin version then installs the node binary
+                                WITHOUT an npm beside it and falls back to
+                                whatever npm is on the PATH; an older npm under
+                                node 24 fails with the singularly unhelpful
+                                "Class extends value undefined is not a
+                                constructor or null".
+                            -->
+                            <nodeVersion>v24.19.0</nodeVersion>
+                            <npmVersion>11.17.0</npmVersion>
                         </configuration>
                     </execution>
                     <execution>
